@@ -1,0 +1,35 @@
+/* Borna-Regular */
+@font-face {
+  font-family: "Borna";
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/Borna-Regular.eot");
+  src: local(""), url("font/Borna-Regular.eot") format("embedded-opentype"),
+    url("font/Borna-Regular.eot") format("woff2"),
+    url("font/Borna-Regular.woff2") format("woff"),
+    url("font/Borna-Regular.ttf") format("truetype");
+}
+
+/* Borna-Medium */
+@font-face {
+  font-family: "Borna";
+  font-style: normal;
+  font-weight: 500;
+  src: url("font/Borna-Medium.eot");
+  src: local(""), url("font/Borna-Medium.eot") format("embedded-opentype"),
+    url("font/Borna-Medium.eot") format("woff2"),
+    url("font/Borna-Medium.woff2") format("woff"),
+    url("font/Borna-Medium.ttf") format("truetype");
+}
+
+/* Borna-SemiBold */
+@font-face {
+  font-family: "Borna";
+  font-style: normal;
+  font-weight: 600;
+  src: url("font/Borna-SemiBold.eot");
+  src: local(""), url("font/Borna-SemiBold.eot") format("embedded-opentype"),
+    url("font/Borna-SemiBold.eot") format("woff2"),
+    url("font/Borna-SemiBold.woff2") format("woff"),
+    url("font/Borna-SemiBold.ttf") format("truetype");
+}

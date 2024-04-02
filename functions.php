@@ -16,7 +16,10 @@ if (!function_exists('ovum_bc_setup')) :
 		 * Add support for two custom navigation menus.
 		 */
 		register_nav_menus(array(
-			'primary'   => __('Primary Menu', 'ovum_bc')
+			'primary'   => __('Primary Menu', 'ovum_bc'),
+			'footer'   => __('Footer Menu', 'ovum_bc'),
+			'category menu'   => __('Categorie Main Menu', 'ovum_bc'),
+			'category'   => __('Categoria Menu', 'ovum_bc')
 		));
 		/**
 		 * Enable support for the following post formats:
@@ -143,7 +146,9 @@ function add_theme_scripts()
 {
 	wp_enqueue_style('swiper-style', "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
 
-	wp_enqueue_style('style', get_stylesheet_uri());
+	wp_enqueue_style('font', get_stylesheet_uri());
+
+	wp_enqueue_style('style', get_stylesheet_directory_uri() . '/font.css');
 
 	wp_enqueue_script('swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), 1.1, true);
 

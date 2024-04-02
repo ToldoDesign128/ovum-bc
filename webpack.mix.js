@@ -5,8 +5,8 @@ mix.sass('assets/css/style.scss', 'style.css');
 
 mix.combine(
   ['assets/js/js-parts/animation.js',
-  'assets/js/js-parts/menu.js',
-  'assets/js/js-parts/swiper.js' ],
+    'assets/js/js-parts/menu.js',
+    'assets/js/js-parts/swiper.js'],
   'scripts.js')
   .minify('scripts.js');
 

@@ -1,0 +1,96 @@
+.button-white,
+.button-gray,
+.button-green {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 200px;
+  position: relative;
+  overflow: hidden;
+
+  .text, .text-1, .text-2{
+    font-size: 16.5px;
+    font-weight: 500;
+    letter-spacing: -.25px;
+  }
+
+  .text {
+    opacity: 0;
+  }
+  .text-1 {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    transition: all .6s cubic-bezier(.215, .61, .355, 1);
+  }
+  .text-2 {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    transition: all .6s cubic-bezier(.215, .61, .355, 1);
+    z-index: 10;
+  }
+  .shape {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 200px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .6s cubic-bezier(.215, .61, .355, 1);
+  }
+  &:hover {
+    .text-1 {
+      top: -50px;
+    }
+    .text-2 {
+      top: 15px;
+    }
+    .shape {
+      left: 0;
+    }
+  }
+}
+
+.button-white {
+  color: $black;
+  background: $white;
+
+  .text-1 {
+    color: $black;
+  }
+  .text-2 {
+    color: $white;
+  }
+  .shape {
+    background: $green;
+  }
+}
+.button-gray {
+  color: $black;
+  background: $light-gray;
+
+  .text-1 {
+    color: $black;
+  }
+  .text-2 {
+    color: $white;
+  }
+  .shape {
+    background: $green;
+  }
+}
+.button-green {
+  color: $white;
+  background: $green;
+
+  .text-1 {
+    color: $white;
+  }
+  .text-2 {
+    color: $white;
+  }
+  .shape {
+    background: $black;
+  }
+}
