@@ -38,7 +38,8 @@
             </a>
             <!-- Menu Categoria -->
             <div class="navigation__categoria">
-                <nav class="navigation__categoria__wrap">
+                <nav <?php
+                        if (is_front_page()) { ?> class="navigation__categoria__wrap white-bg" <?php } else { ?> class="navigation__categoria__wrap gray-bg" <?php } ?>>
                     <?php
                     wp_nav_menu(array(
                         'theme_location'    => 'category',
