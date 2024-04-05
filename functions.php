@@ -158,3 +158,6 @@ function add_theme_scripts()
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 //CPT
+require dirname(__FILE__) . '/function-parts/cpt-prima-e-dopo.php';
+require dirname(__FILE__) . '/function-parts/cpt-recensioni.php';
+require dirname(__FILE__) . '/function-parts/cpt-video.php';
