@@ -2,7 +2,7 @@
 // Menu
 jQuery("#hamburgerButton").click(function () {
   jQuery("#hamburgerButton").toggleClass("is-active");
-  jQuery("#homeCta").toggleClass("hide-cta");
+  jQuery(".navigation__button__cta > a").toggleClass("hide-cta");
   jQuery("#menu").toggleClass("open");
 });
 
