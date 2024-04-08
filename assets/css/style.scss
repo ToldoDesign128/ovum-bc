@@ -20,13 +20,14 @@ $primary-font: "Borna", serif;
 
 // Reset
 @import '/assets/css/scss-parts/reset.scss';
+@import '/assets/css/scss-parts/media-screen.scss';
 
 // Utilities
 @import '/assets/css/scss-parts/color.scss';
 @import '/assets/css/scss-parts/margin.scss';
-@import '/assets/css/scss-parts/media-screen.scss';
 @import '/assets/css/scss-parts/typo.scss';
 
 // Block
 @import '/assets/css/scss-parts/block/button.scss';
 @import '/assets/css/scss-parts/block/header.scss';
+@import '/assets/css/scss-parts/block/footer.scss';

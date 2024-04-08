@@ -2,6 +2,7 @@
 // Menu
 jQuery("#hamburgerButton").click(function () {
   jQuery("#hamburgerButton").toggleClass("is-active");
+  jQuery("body").toggleClass("stop-scroll");
   jQuery(".navigation__button__cta > a").toggleClass("hide-cta");
   jQuery("#menu").toggleClass("open");
 });
