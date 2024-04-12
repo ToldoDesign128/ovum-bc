@@ -18,9 +18,30 @@
             <div class="footer__col__1__cta">
                 <!-- Footer CTA -->
                 <a href="#" class="button-white">
-                    <span class="text">Prenota una visita</span>
-                    <span class="text-1">Prenota una visita</span>
-                    <span class="text-2">Prenota una visita</span>
+                    <span class="text">Prenota una visita
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024" class="ml-1">
+                            <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(0.424 0.6)">
+                                <path id="Tracciato_26" data-name="Tracciato 26" d="M10.5,20.5l10-10" transform="translate(-10.5 -10.5)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1.2" />
+                                <path id="Tracciato_27" data-name="Tracciato 27" d="M10.5,10.5h10v10" transform="translate(-10.5 -10.5)" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="1.2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-1">Prenota una visita
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024" class="ml-1">
+                            <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(0.424 0.6)">
+                                <path id="Tracciato_26" data-name="Tracciato 26" d="M10.5,20.5l10-10" transform="translate(-10.5 -10.5)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1.2" />
+                                <path id="Tracciato_27" data-name="Tracciato 27" d="M10.5,10.5h10v10" transform="translate(-10.5 -10.5)" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="1.2" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-2">Prenota una visita
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024" class="ml-1">
+                            <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(-10.076 -9.9)">
+                                <path id="Tracciato_26" data-name="Tracciato 26" d="M10.5,20.5l10-10" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.2" />
+                                <path id="Tracciato_27" data-name="Tracciato 27" d="M10.5,10.5h10v10" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="1.2" />
+                            </g>
+                        </svg>
+                    </span>
                     <span class="shape"></span>
                 </a>
             </div>
@@ -52,7 +73,7 @@
                 <?php
                 $testo_contatti = get_field('titolo_contatti_footer', 'option');
                 if (!empty($testo_contatti)) : ?>
-                    <p class="footer__col__2__subcol__title"><?php echo esc_html($testo_contatti); ?></p>
+                    <p class="footer__col__2__subcol__title font-medium"><?php echo esc_html($testo_contatti); ?></p>
                 <?php endif; ?>
                 <!-- Telefono title -->
                 <?php
@@ -123,7 +144,7 @@
                 <?php
                 $titolo_social = get_field('titolo_social_footer', 'option');
                 if (!empty($titolo_social)) : ?>
-                    <p><?php echo esc_html($titolo_social); ?></p>
+                    <p class="font-medium"><?php echo esc_html($titolo_social); ?></p>
                 <?php endif; ?>
                 <div class="footer__col__2__subcol__social">
                     <!-- Facebook -->
@@ -136,8 +157,14 @@
                     ?>
                         <div class="footer__col__2__subcol__social__item">
                             <a class="" href="<?php echo esc_url($facebook_url); ?>" target="<?php echo esc_attr($facebook_target); ?>">
-                                <!-- Telefono icon -->
                                 <?php echo esc_html($facebook_title); ?>
+                                <!-- Freccia icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024" class="ml-1">
+                                    <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(-10.076 -9.9)">
+                                        <path id="Tracciato_26" data-name="Tracciato 26" d="M10.5,20.5l10-10" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.2" />
+                                        <path id="Tracciato_27" data-name="Tracciato 27" d="M10.5,10.5h10v10" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="1.2" />
+                                    </g>
+                                </svg>
                             </a>
                         </div>
                     <?php endif; ?>
@@ -151,8 +178,14 @@
                     ?>
                         <div class="footer__col__2__subcol__social__item">
                             <a class="" href="<?php echo esc_url($youtube_url); ?>" target="<?php echo esc_attr($youtube_target); ?>">
-                                <!-- Telefono icon -->
                                 <?php echo esc_html($youtube_title); ?>
+                                <!-- Freccia icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024" class="ml-1">
+                                    <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(-10.076 -9.9)">
+                                        <path id="Tracciato_26" data-name="Tracciato 26" d="M10.5,20.5l10-10" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.2" />
+                                        <path id="Tracciato_27" data-name="Tracciato 27" d="M10.5,10.5h10v10" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="1.2" />
+                                    </g>
+                                </svg>
                             </a>
                         </div>
                     <?php endif; ?>
@@ -189,52 +222,51 @@
             </div>
         </div>
     </div>
-    <div class="container footer-credits">
-        <div class="credits">
-            <p class="">
-                Powered by
-                <a href="https://ovumdesign.it/" target="_blank" class="">ExVoid</a>
-                <span>
+    <div class="footer-credits">
+        <div class="container footer-credits-box">
+            <div class="credits">
+                <p class="">
+                    Powered by
+                    <a href="https://ovumdesign.it/" target="_blank" class="">ExVoid</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <path fill="white" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z" />
                     </svg>
-                </span>
-                <a href="https://www.exvoid.it/" target="_blank" class="">Ovum</a>
-            </p>
+                    <a href="https://www.exvoid.it/" target="_blank" class="">Ovum</a>
+                </p>
 
-        </div>
-        <div class="privacy">
-            <!-- Privacy policy -->
-            <?php
-            $privacy = get_field('privacy_policy_footer', 'option');
-            if (!empty($privacy)) :
-                $privacy_url = $privacy['url'];
-                $privacy_title = $privacy['title'];
-                $privacy_target = $privacy['target'] ? $privacy['target'] : '_self';;
-            ?>
-                <div class="">
-                    <a class="" href="<?php echo esc_url($privacy_url); ?>" target="<?php echo esc_attr($privacy_target); ?>">
-                        <?php echo esc_html($privacy_title); ?>
-                    </a>
-                </div>
-            <?php endif; ?>
-            <span class="privacy__punto"></span>
-            <!-- Cookie policy -->
-            <?php
-            $cookie = get_field('cookie_policy_footer', 'option');
-            if (!empty($cookie)) :
-                $cookie_url = $cookie['url'];
-                $cookie_title = $cookie['title'];
-                $cookie_target = $cookie['target'] ? $cookie['target'] : '_self';;
-            ?>
-                <div class="">
-                    <a class="" href="<?php echo esc_url($cookie_url); ?>" target="<?php echo esc_attr($cookie_target); ?>">
-                        <?php echo esc_html($cookie_title); ?>
-                    </a>
-                </div>
-            <?php endif; ?>
-            <!-- Cookie Banner -->
-            <button class="cmplz-manage-consent">Consenso cookie</button>
+            </div>
+            <div class="privacy">
+                <!-- Privacy policy -->
+                <?php
+                $privacy = get_field('privacy_policy_footer', 'option');
+                if (!empty($privacy)) :
+                    $privacy_url = $privacy['url'];
+                    $privacy_title = $privacy['title'];
+                    $privacy_target = $privacy['target'] ? $privacy['target'] : '_self';;
+                ?>
+                    <div class="">
+                        <a class="" href="<?php echo esc_url($privacy_url); ?>" target="<?php echo esc_attr($privacy_target); ?>">
+                            <?php echo esc_html($privacy_title); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <!-- Cookie policy -->
+                <?php
+                $cookie = get_field('cookie_policy_footer', 'option');
+                if (!empty($cookie)) :
+                    $cookie_url = $cookie['url'];
+                    $cookie_title = $cookie['title'];
+                    $cookie_target = $cookie['target'] ? $cookie['target'] : '_self';;
+                ?>
+                    <div class="ml-1">
+                        <a class="punto" href="<?php echo esc_url($cookie_url); ?>" target="<?php echo esc_attr($cookie_target); ?>">
+                            <?php echo esc_html($cookie_title); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <!-- Cookie Banner -->
+                <button class="cmplz-manage-consent">Consenso cookie</button>
+            </div>
         </div>
     </div>
 </footer>

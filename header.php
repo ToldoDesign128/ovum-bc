@@ -30,9 +30,9 @@
             <a href="<?php echo home_url(); ?>" class="navigation__logo">
                 <?php
                 if (is_front_page()) {
-                    echo "Logo Home";
+                    echo    '<img src="' . get_template_directory_uri() . '/assets/img/logo_benessere_chiropratico_w.svg" alt="' . get_bloginfo('name') . '">';
                 } else {
-                    echo "Logo";
+                    echo    '<img src="' . get_template_directory_uri() . '/assets/img/logo_benessere_chiropratico_b.svg" alt="' . get_bloginfo('name') . '">';
                 }
                 ?>
             </a>

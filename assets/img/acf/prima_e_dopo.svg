@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Raggruppa_1574" data-name="Raggruppa 1574" transform="translate(-828 -6908)">
+    <g id="Raggruppa_1573" data-name="Raggruppa 1573" transform="translate(-183.9 1.999)">
+      <path id="Icon_ionic-md-arrow-dropleft" data-name="Icon ionic-md-arrow-dropleft" d="M13.5,9,21,16.5,13.5,24Z" transform="translate(1035.9 6922.001)" fill="#fff"/>
+      <path id="Icon_ionic-md-arrow-dropleft-2" data-name="Icon ionic-md-arrow-dropleft" d="M21,9l-7.5,7.5L21,24Z" transform="translate(1018.4 6922.001)" fill="#fff"/>
+    </g>
+    <g id="Rettangolo_69" data-name="Rettangolo 69" transform="translate(828 6908)" fill="none" stroke="#fff" stroke-width="3">
+      <rect width="64" height="64" rx="32" stroke="none"/>
+      <rect x="1.5" y="1.5" width="61" height="61" rx="30.5" fill="none"/>
+    </g>
+  </g>
+</svg>

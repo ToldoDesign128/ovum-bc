@@ -13,15 +13,13 @@ footer {
       padding: 100px 20px 20px 20px;
     }
 
-    @media #{$xxl} {
-      max-width: 1600px;
-      margin: auto;
-    }
-
     &__col__1 {
       width: 100%;
 
       @media #{$lg} {
+        width: 40%;
+      }
+      @media #{$xl} {
         width: 50%;
       }
 
@@ -29,6 +27,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
 
         img {
           width: 68px;
@@ -39,6 +38,7 @@ footer {
           }
         }
         h6 {
+          padding-right: 10px;
           color: $white;
           font-size: 24px;
           letter-spacing: -0.36px;
@@ -99,8 +99,13 @@ footer {
       flex-direction: column;
 
       @media #{$lg} {
-        width: 50%;
+        width: 60%;
         flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media #{$xl} {
+        width: 50%;
       }
 
       &__subcol {
@@ -134,6 +139,10 @@ footer {
 
         &__telefono-title {
           margin-top: 15px;
+
+          @media #{$lg} {
+            margin-top: 25px;
+          }
         }
         &__indirizzo-title {
           margin-top: 15px;
@@ -155,6 +164,89 @@ footer {
               font-weight: 400;
               letter-spacing: -0.21px;
               line-height: 18px;
+              position: relative;
+              transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+            @media #{$lg} {
+              margin-top: 15px;
+              width: 100%;
+
+              &:first-child {
+                margin-top: 25px;
+              }
+
+              a {
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: -20px;
+                  transform: translateY(-50%);
+                  display: block;
+                  height: 5px;
+                  width: 5px;
+                  background: $green;
+                  border-radius: 100%;
+                  opacity: 0;
+                  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+
+                &:hover {
+                  opacity: 1;
+                  margin-left: 20px;
+
+                  &::after {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+          @media #{$lg} {
+            flex-direction: column;
+          }
+        }
+
+        nav {
+          min-width: 130px;
+          .footer-menu {
+            li {
+              margin-top: 15px;
+
+              &:first-child {
+                margin-top: 0;
+              }
+              a {
+                display: inline-block;
+                width: 100%;
+                font-weight: 400;
+                position: relative;
+                transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: -20px;
+                  transform: translateY(-50%);
+                  display: block;
+                  height: 5px;
+                  width: 5px;
+                  background: $green;
+                  border-radius: 100%;
+                  opacity: 0;
+                  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+
+                &:hover {
+                  opacity: 1;
+                  margin-left: 20px;
+
+                  &::after {
+                    opacity: 1;
+                  }
+                }
+              }
             }
           }
         }
@@ -167,8 +259,24 @@ footer {
           margin-top: 0;
           width: 33.333%;
 
+          &:nth-child(2){
+            padding-left: 10%;
+          }
+
           &:last-child {
+            width: auto;
             display: flex;
+            justify-content: flex-end;
+          }
+        }
+        @media #{$xl} {
+          &:nth-child(2){
+            padding-left: 8%;
+          }
+        }
+        @media #{$xxl} {
+          &:nth-child(2){
+            padding-left: 5%;
           }
         }
       }
@@ -185,28 +293,42 @@ footer {
       &__return {
         display: none;
       }
+      @media #{$lg} {
+        margin-top: 80px;
+      }
     }
   }
   .footer-credits {
     border-top: 1px solid $white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
 
-    .credits{
+    .footer-credits-box {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .credits {
         color: white;
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
         letter-spacing: -0.21px;
 
-        a{
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
+        a {
+          color: white;
+          font-weight: 600;
+          text-decoration: none;
         }
-    }
-    .privacy{
+        svg {
+          max-height: 14px;
+          color: $green;
+
+          path {
+            color: $green;
+            fill: $green;
+          }
+        }
+      }
+      .privacy {
         margin-top: 20px;
         display: flex;
         flex-direction: row;
@@ -217,50 +339,114 @@ footer {
         line-height: 18px;
         letter-spacing: -0.21px;
 
-        &__punto{
-            margin-right: 10px;
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: -0.21px;
+          margin-right: 10px;
+          color: white;
+          text-decoration: none;
+          position: relative;
+
+          @media #{$lg} {
+            &::after {
+              content: "";
+              z-index: 30;
+              position: absolute;
+              top: 50%;
+              left: 20px;
+              transform: translateY(-50%);
+              display: block;
+              height: 5px;
+              width: 5px;
+              background: $green;
+              border-radius: 100%;
+              opacity: 0;
+              transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+
+            &:hover {
+              &::after {
+                opacity: 1;
+                left: -12px;
+              }
+            }
+          }
+        }
+
+        .punto {
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -12px;
+            transform: translateY(-50%);
             height: 5px;
             width: 5px;
-            display: block;
             background: $white;
             border-radius: 100%;
+          }
         }
 
-        a{
-            margin-right: 10px;
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
-        }
+        button {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: -0.21px;
+          margin-left: 10px;
+          background: none;
+          border: none;
+          color: white;
+          text-decoration: none;
+          position: relative;
 
-        button{
-            margin-left: 10px;
-            background: none;
-            border: none;
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
-            position: relative;
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            transform: translateY(-50%);
+            height: 5px;
+            width: 5px;
+            background: $white;
+            border-radius: 100%;
+          }
 
-            &::before{
-                content: '';
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: -10px;
-                transform: translateY(-50%);
-                height: 5px;
-                width: 5px;
-                background: $white;
-                border-radius: 100%;
+          @media #{$lg} {
+            &::after {
+              content: "";
+              z-index: 30;
+              position: absolute;
+              top: 50%;
+              left: 20px;
+              transform: translateY(-50%);
+              display: block;
+              height: 5px;
+              width: 5px;
+              background: $green;
+              border-radius: 100%;
+              opacity: 0;
+              transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
             }
-        }
-    }
 
-    @media #{$lg} {
-        flex-direction: row;    
+            &:hover {
+              &::after {
+                opacity: 1;
+                left: -10px;
+              }
+            }
+          }
+        }
+      }
+
+      @media #{$lg} {
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;    
+        align-items: center;
+      }
     }
   }
 }
