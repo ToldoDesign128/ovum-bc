@@ -24,7 +24,7 @@
 
 <body <?php body_class(); ?>>
     <!-- Header -->
-    <header class="container">
+    <header>
         <div class="navigation">
             <!-- Logo -->
             <a href="<?php echo home_url(); ?>" class="navigation__logo">

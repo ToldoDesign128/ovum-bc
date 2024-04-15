@@ -231,9 +231,62 @@ input {
   font-weight: 600;
 }
 
+.navigation-wrap {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width : 1024px) {
+  .navigation-wrap {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: unset;
+  margin-top: 24px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 11px;
+  color: #000;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+
+.swiper-pagination {
+  position: unset;
+  margin: 0 40px;
+}
+
+.swiper-horizontal .swiper-pagination-bullets,
+.swiper-horizontal .swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 19px;
+  width: auto;
+}
+.swiper-horizontal .swiper-pagination-bullets span {
+  width: 40px;
+  height: 6px;
+  border-radius: 3px;
+}
+.swiper-horizontal .swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+.swiper-button-disabled {
+  opacity: 1;
+}
+
 .button-white,
 .button-gray,
 .button-green {
+  display: inline-block;
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 200px;
@@ -1105,5 +1158,133 @@ footer .footer-credits .footer-credits-box .privacy button::before {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.stikyloop {
+  padding: 20px;
+  overflow-x: clip;
+}
+.stikyloop__slider ul li {
+  display: flex;
+  flex-direction: column;
+}
+.stikyloop__slider ul li .sticky-content {
+  width: 100%;
+  order: 2;
+}
+.stikyloop__slider ul li .sticky-content__cat {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 600;
+}
+@media (min-width : 1280px) {
+  .stikyloop__slider ul li .sticky-content__cat {
+    margin-top: 0;
+    font-size: 16.5px;
+    line-height: 20px;
+  }
+}
+.stikyloop__slider ul li .sticky-content__title {
+  margin-top: 10px;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
+@media (min-width : 1280px) {
+  .stikyloop__slider ul li .sticky-content__title {
+    margin-top: 15px;
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+.stikyloop__slider ul li .sticky-content__extract {
+  margin-top: 20px;
+  font-size: 16.5px;
+  line-height: 22px;
+  font-weight: 400;
+}
+@media (min-width : 1280px) {
+  .stikyloop__slider ul li .sticky-content__extract {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (min-width : 1280px) {
+  .stikyloop__slider ul li .sticky-content {
+    order: 1;
+    width: 33.3%;
+  }
+}
+.stikyloop__slider ul li iframe, .stikyloop__slider ul li img {
+  order: 1;
+  max-height: 200px;
+  width: 100%;
+  border-radius: 30px;
+}
+@media (min-width : 768px) {
+  .stikyloop__slider ul li iframe, .stikyloop__slider ul li img {
+    max-height: 440px;
+  }
+}
+@media (min-width : 1280px) {
+  .stikyloop__slider ul li iframe, .stikyloop__slider ul li img {
+    order: 2;
+    width: 50%;
+  }
+}
+.stikyloop__slider ul li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width : 1280px) {
+  .stikyloop__slider ul li {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.videorecensione {
+  padding: 20px;
+  overflow-x: clip;
+}
+.videorecensione__slider ul li iframe {
+  max-height: 200px;
+  width: 100%;
+  border-radius: 30px;
+}
+@media (min-width : 768px) {
+  .videorecensione__slider ul li iframe {
+    max-height: 500px;
+  }
+}
+.videorecensione__slider ul li p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.21px;
+}
+.videorecensione__slider ul li p.nome-video {
+  margin-top: 25px;
+  font-size: 16.5px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.25px;
+}
+@media (min-width : 1024px) {
+  .videorecensione__slider ul li p {
+    font-size: 16.5px;
+    line-height: 22px;
+    letter-spacing: -0.25px;
+  }
+  .videorecensione__slider ul li p.nome-video {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
   }
 }

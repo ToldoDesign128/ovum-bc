@@ -161,3 +161,4 @@ add_action('wp_enqueue_scripts', 'add_theme_scripts');
 require dirname(__FILE__) . '/function-parts/cpt-prima-e-dopo.php';
 require dirname(__FILE__) . '/function-parts/cpt-recensioni.php';
 require dirname(__FILE__) . '/function-parts/cpt-video.php';
+require dirname(__FILE__) . '/function-parts/cpt-faq.php';
