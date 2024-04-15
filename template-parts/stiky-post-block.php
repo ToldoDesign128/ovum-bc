@@ -16,7 +16,7 @@
 
             <?php if ($custom_loop->have_posts()) : while ($custom_loop->have_posts()) : $custom_loop->the_post(); ?>
                     <li class="swiper-slide">
-                        <div class="sticky-content">
+                        <article class="sticky-content">
                             <p class="sticky-content__cat"><?php $cat = get_the_category();
                                                             echo $cat[0]->cat_name; ?></p>
                             <p class="sticky-content__title"><?php the_title(); ?></p>
@@ -50,7 +50,7 @@
                                 </span>
                                 <span class="shape"></span>
                             </a>
-                        </div>
+                        </article>
 
 
                         <?php

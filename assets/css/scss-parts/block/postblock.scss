@@ -1,0 +1,101 @@
+// Post Block
+.postblock {
+  padding: 20px;
+  overflow-x: clip;
+  &__slider {
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+
+        .post-content {
+          width: 100%;
+
+          &__image {
+            position: relative;
+            img {
+              width: 100%;
+              max-height: 200px;
+              object-fit: cover;
+              border-radius: 30px;
+
+              @media #{$xl} {
+                max-height: 260px;
+              }
+            }
+
+            &__cat {
+              position: absolute;
+              bottom: 15px;
+              left: 15px;
+              padding: 9px 12px;
+              background-color: $white;
+              border-radius: 23px;
+              text-transform: uppercase;
+              font-size: 11px;
+              line-height: 15px;
+              font-weight: 600;
+
+              @media #{$xl} {
+                font-size: 16.5px;
+                line-height: 20px;
+              }
+            }
+
+            &__button{
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                padding: 15px 18px;
+
+                .text, .text-1, .text-2{
+                    left: unset;
+                }
+            }
+          }
+
+          &__title {
+            margin-top: 25px;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 500;
+
+            @media #{$xl} {
+              margin-top: 40px;
+              font-size: 24px;
+              line-height: 30px;
+            }
+          }
+          &__extract {
+            margin-top: 15px;
+            font-size: 16.5px;
+            line-height: 22px;
+            font-weight: 400;
+
+            @media #{$xl} {
+              margin-top: 20px;
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+          &__date {
+            margin-top: 15px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+
+            @media #{$xl} {
+              margin-top: 20px;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+        }
+
+        @media #{$xl} {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
