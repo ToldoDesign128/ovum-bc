@@ -1,0 +1,86 @@
+// Quote
+
+.quote {
+  padding: 20px;
+  overflow: clip;
+
+  &__wrapper {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 20px;
+      background-color: $light-gray;
+      border-radius: 30px;
+      position: relative;
+
+      &__icon {
+        max-width: 38px;
+        @media #{$lg} {
+          position: absolute;
+          max-width: 68px;
+          left: 40px;
+        }
+        @media #{$xxl} {
+            left: 100px;
+          }
+
+      }
+      &__text {
+        width: 100%;
+        margin-top: 25px;
+
+        &__testimonianza {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 24px;
+
+          @media #{$lg} {
+            font-size: 38px;
+            font-weight: 500;
+            line-height: 46px;
+            letter-spacing: -0.57px;
+          }
+        }
+        &__nome {
+          margin-top: 40px;
+          font-size: 16.5px;
+          font-weight: 500;
+          line-height: 22px;
+
+          @media #{$lg} {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+          }
+        }
+        &__pat {
+          margin-top: 5px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+
+          @media #{$lg} {
+            font-size: 16.5px;
+            line-height: 22px;
+          }
+        }
+
+        @media #{$lg} {
+          margin-top: 0;
+        }
+      }
+
+      @media #{$lg} {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 90px 135px;
+      }
+      @media #{$xxl} {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 90px 260px;
+      }
+    }
+  }
+}
