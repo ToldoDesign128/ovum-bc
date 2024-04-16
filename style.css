@@ -1282,16 +1282,22 @@ footer .footer-credits .footer-credits-box .privacy button::before {
   }
 }
 .ped__content__text {
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 16.5px;
   line-height: 22px;
   font-weight: 400;
 }
+.ped__content__text:first-child {
+  margin-top: 25px;
+}
 @media (min-width : 1280px) {
   .ped__content__text {
-    margin-top: 40px;
+    margin-top: 25px;
     font-size: 18px;
     line-height: 24px;
+  }
+  .ped__content__text:first-child {
+    margin-top: 40px;
   }
 }
 @media (min-width : 1280px) {

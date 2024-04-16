@@ -4,15 +4,27 @@
         <ul class="swiper-wrapper">
             <?php
             $sticky = get_option('sticky_posts');
-            $custom_loop = new WP_Query(array(
-                'post_type' => 'post',
-                'post__in' => $sticky,
-                'category'  => 'chiropratica',
-                'ignore_sticky_posts' => 1,
-                'posts_per_page' => 10,
-                'orderby'        => 'menu_order',
-                'order'          => 'ASC'
-            )); ?>
+            if (is_front_page()) {
+                $custom_loop = new WP_Query(array(
+                    'post_type' => 'post',
+                    'post__in' => $sticky,
+                    'category_name'  => 'chiropratica',
+                    'ignore_sticky_posts' => 1,
+                    'posts_per_page' => 10,
+                    'orderby'        => 'menu_order',
+                    'order'          => 'ASC'
+                ));
+            } else {
+                $custom_loop = new WP_Query(array(
+                    'post_type' => 'post',
+                    'post__in' => $sticky,
+                    'ignore_sticky_posts' => 1,
+                    'posts_per_page' => 10,
+                    'orderby'        => 'menu_order',
+                    'order'          => 'ASC'
+                ));
+            }
+            ?>
 
             <?php if ($custom_loop->have_posts()) : while ($custom_loop->have_posts()) : $custom_loop->the_post(); ?>
                     <li class="swiper-slide">

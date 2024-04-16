@@ -146,9 +146,9 @@ function add_theme_scripts()
 {
 	wp_enqueue_style('swiper-style', "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
 
-	wp_enqueue_style('font', get_stylesheet_uri());
+	wp_enqueue_style('style', get_stylesheet_uri());
 
-	wp_enqueue_style('style', get_stylesheet_directory_uri() . '/font.css');
+	wp_enqueue_style('font', get_stylesheet_directory_uri() . '/font.css');
 
 	wp_enqueue_script('swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), 1.1, true);
 
