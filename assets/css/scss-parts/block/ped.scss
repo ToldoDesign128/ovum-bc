@@ -41,6 +41,7 @@
   &__slider {
     margin-top: 25px;
     width: 100%;
+    overflow-x: clip;
 
     .pedImage {
       &__box {
@@ -79,6 +80,9 @@
     }
   }
 
+  @media #{$lg} {
+    padding: 20px 20px 68px 20px;
+  }
   @media #{$xl} {
     flex-direction: row;
     justify-content: space-between;

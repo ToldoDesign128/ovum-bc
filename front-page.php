@@ -11,5 +11,7 @@
     <?php get_template_part("template-parts/cta"); ?>
 
     <?php get_template_part("template-parts/quote"); ?>
+
+    <?php get_template_part("template-parts/faq"); ?>
 </div>
 <?php get_footer(); ?>

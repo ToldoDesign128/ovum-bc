@@ -14,10 +14,46 @@
                     <li class="swiper-slide">
                         <article class="post-content">
                             <div class="post-content__image">
-                                <?php the_post_thumbnail('large', array('class' => 'img-res', 'alt' => get_the_title())); ?>
+                                <?php
+                                $post_sellector = get_field('selettore_immagine');
+                                $post_image = get_field('immagine_copertina');
+
+                                if ($post_sellector == 'Immagine') { ?>
+                                    <img src="<?php echo esc_url($post_image['url']); ?>" />
+                                <?php
+                                } else {
+                                ?>
+                                    <!-- Video -->
+                                    <?php
+                                    // Load value.
+                                    $iframe = get_field('video_copertina');
+
+                                    // Use preg_match to find iframe src.
+                                    preg_match('/src="(.+?)"/', $iframe, $matches);
+                                    $src = $matches[1];
+
+                                    // Add extra parameters to src and replace HTML.
+                                    $params = array(
+                                        'controls'  => 0,
+                                        'hd'        => 1,
+                                        'autohide'  => 1
+                                    );
+                                    $new_src = add_query_arg($params, $src);
+                                    $iframe = str_replace($src, $new_src, $iframe);
+
+                                    // Add extra attributes to iframe HTML.
+                                    $attributes = 'frameborder="0"';
+                                    $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+                                    // Display customized HTML.
+                                    echo $iframe;
+                                    ?>
+                                <?php
+                                };
+                                ?>
                                 <!-- Post category -->
                                 <p class="post-content__image__cat"><?php $cat = get_the_category();
-                                                                echo $cat[0]->cat_name; ?></p>
+                                                                    echo $cat[0]->cat_name; ?></p>
                                 <!-- Stiky Post CTA -->
                                 <a href="<?php the_permalink(); ?>" class="post-content__image__button button-gray mt-3">
                                     <span class="text">

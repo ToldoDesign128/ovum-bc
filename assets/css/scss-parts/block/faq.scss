@@ -1,0 +1,113 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  &__title {
+    width: 100%;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.51px;
+
+    @media #{$lg} {
+      width: 30%;
+      font-size: 52px;
+      line-height: 60px;
+      letter-spacing: -0.78px;
+    }
+  }
+  &__list {
+    width: 100%;
+    margin-top: 20px;
+
+    &__panel {
+      border-bottom: 1px solid $medium-gray;
+      padding: 10px 0;
+
+      &__title {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__meno {
+          display: none;
+        }
+        &__plus {
+          display: block;
+        }
+
+        p {
+          max-width: 80%;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          position: relative;
+
+          @media #{$lg} {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.36px;
+          }
+        }
+
+        &.title-active {
+          .faq__list__panel__title__meno {
+            display: block;
+          }
+          .faq__list__panel__title__plus {
+            display: none;
+          }
+        }
+      }
+
+      &__text {
+        max-height: 0;
+        overflow-y: clip;
+        transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        p {
+          padding: 10px 0;
+          font-size: 16.5px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: -0.25px;
+
+          @media #{$lg} {
+            padding-top: 30px;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0;
+          }
+        }
+
+        &.panel-active {
+          max-height: 400px;
+        }
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      @media #{$lg} {
+        padding: 30px 0;
+
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+
+    @media #{$lg} {
+      width: 60%;
+      margin-top: 0;
+    }
+  }
+
+  @media #{$lg} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
