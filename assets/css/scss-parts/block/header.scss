@@ -1,9 +1,10 @@
 // Header
 
 header {
+  position: absolute;
   z-index: 10;
   width: 100%;
-  padding: 25px 30px;
+  padding: 35px 40px;
 
   .navigation {
     position: relative;
@@ -29,10 +30,10 @@ header {
         padding: 0 25px;
         border-radius: 200px;
 
-        &.gray-bg{
+        &.gray-bg {
           background-color: $light-gray;
         }
-        &.white-bg{
+        &.white-bg {
           background-color: $white;
         }
 
@@ -99,7 +100,7 @@ header {
         }
       }
 
-      .hide-cta{
+      .hide-cta {
         display: none;
       }
 
@@ -158,6 +159,7 @@ header {
 
       @media #{$xl} {
         width: 25%;
+        right: 40px;
       }
     }
   }
@@ -336,7 +338,7 @@ header {
 
               &:hover {
                 padding-left: 20px;
-  
+
                 &::before {
                   opacity: 1;
                   height: 7px;
@@ -344,8 +346,6 @@ header {
                 }
               }
             }
-
-            
           }
           .current-menu-item {
             opacity: 0.5;
@@ -367,6 +367,6 @@ header {
   }
 }
 
-.stop-scroll{
+.stop-scroll {
   overflow-y: hidden;
 }

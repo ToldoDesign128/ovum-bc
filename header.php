@@ -13,12 +13,15 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>" type="image/x-icon">
 
     <title>
-        <?php if (is_archive()) {
-            echo the_archive_title();
+        <?php
+        if (is_front_page()) {
+            bloginfo('name');
         } else {
-            echo the_title();
-        }  ?>
+            wp_title('');
+        };
+        ?>
     </title>
+
     <?php wp_head(); ?>
 </head>
 

@@ -1,6 +1,6 @@
 <!-- Loop Blog -->
-<section class="container ">
-    <ul class="">
+<section class="container loop-blog">
+    <ul class="loop-blog__grid">
         <?php
         $custom_loop = new WP_Query(array(
             'post_type' => 'post',
@@ -10,7 +10,7 @@
         )); ?>
 
         <?php if ($custom_loop->have_posts()) : while ($custom_loop->have_posts()) : $custom_loop->the_post(); ?>
-                <li class="">
+                <li class="loop-blog__grid__item">
                     <article class="post-content">
                         <div class="post-content__image">
                             <?php
