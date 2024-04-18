@@ -1,23 +1,176 @@
 .hero-home {
-  padding: 10px;
+  padding: 5px;
   width: 100%;
-  height: 98vh;
+  height: 100vh;
   overflow: clip;
+
+  @media #{$lg} {
+    padding: 10px;
+  }
 
   &__content {
     height: 100%;
     width: 100%;
     position: relative;
 
+    .container {
+      height: 100%;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      z-index: 1;
+      position: relative;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+
+      @media #{$lg} {
+        width: 65%;
+        align-items: flex-start;
+      }
+      @media #{$xl} {
+        width: 50%;
+      }
+      @media #{$xxl} {
+        width: 45%;
+      }
+
+      &__title {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 15px;
+
+        @media #{$lg} {
+          font-size: 16.5px;
+          line-height: 20px;
+        }
+      }
+      &__subtitle {
+        color: $white;
+        margin-top: 10px;
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 60px;
+
+        @media #{$lg} {
+          margin-top: 30px;
+          font-size: 96px;
+          line-height: 103px;
+          letter-spacing: -1.44px;
+        }
+      }
+      &__text {
+        color: $white;
+        margin-top: 25px;
+        font-size: 16.5px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.25px;
+
+        @media #{$lg} {
+          margin-top: 30px;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0px;
+        }
+      }
+      &__line {
+        margin-top: 40px;
+        height: 1px;
+        width: 100%;
+        display: block;
+        background-color: $white;
+
+        @media #{$lg} {
+          margin-top: 45px;
+        }
+      }
+      &__mobile {
+        &__button {
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 28px;
+          text-decoration: none;
+          color: $white;
+          font-size: 16.5px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: -0.25px;
+
+          @media #{$lg} {
+            display: none;
+          }
+        }
+      }
+      &__button {
+        display: none;
+        width: 100%;
+        text-decoration: none;
+        color: $white;
+        margin-top: 18px;
+        margin-bottom: 80px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: transparent;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16.5px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.25px;
+        transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        @media #{$lg} {
+          display: flex;
+
+          &:hover {
+            color: $black;
+            background-color: $white;
+
+            svg {
+              color: $black;
+              path {
+                fill: $black;
+              }
+
+              &.svg-arrow{
+                path {
+                    fill: none;
+                    stroke: $black;
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+
     &__bg {
       z-index: 0;
       position: absolute;
       top: 0px;
-      left: 0px;
+      left: unset;
+      right: 0;
+      object-position: 75% bottom;
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 30px;
+
+      @media #{$lg} {
+        left: 0;
+        right: unset;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+      }
     }
     &__gradient {
       position: absolute;

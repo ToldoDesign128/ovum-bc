@@ -1,5 +1,7 @@
 .cta {
-  padding: 20px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  padding: 0 20px;
 
   &__content {
     overflow: clip;
@@ -90,5 +92,10 @@
     @media #{$lg} {
       padding: 120px 20px 90px 20px;
     }
+  }
+
+  @media #{$lg} {
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 }

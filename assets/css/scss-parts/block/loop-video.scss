@@ -1,0 +1,73 @@
+.loop-video {
+  margin-top: 75px;
+  padding: 0 20px;
+
+  @media #{$lg} {
+    margin-top: 150px;
+  }
+
+  &__title {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 15px;
+
+    @media #{$lg} {
+      font-size: 16.5px;
+      line-height: 20px;
+    }
+  }
+  &__grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    @media #{$lg} {
+      margin-top: 70px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    &__item {
+        margin-bottom: 15px;
+      iframe {
+        max-height: 200px;
+        width: 100%;
+        border-radius: 30px;
+
+        @media #{$md} {
+          max-height: 500px;
+        }
+      }
+      p {
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.21px;
+
+        &.nome-video {
+          margin-top: 25px;
+          font-size: 16.5px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: -0.25px;
+        }
+
+        @media #{$lg} {
+          font-size: 16.5px;
+          line-height: 22px;
+          letter-spacing: -0.25px;
+
+          &.nome-video {
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.3px;
+          }
+        }
+      }
+    }
+  }
+}

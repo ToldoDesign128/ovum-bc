@@ -1,6 +1,7 @@
 // Quote
 
 .quote {
+  margin-top: 20px;
   padding: 20px;
   overflow: clip;
 
@@ -82,5 +83,9 @@
         padding: 90px 260px;
       }
     }
+  }
+
+  @media #{$lg} {
+    margin-top: 130px;    
   }
 }

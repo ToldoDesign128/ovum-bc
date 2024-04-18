@@ -4,7 +4,11 @@ header {
   position: absolute;
   z-index: 10;
   width: 100%;
-  padding: 35px 40px;
+  padding: 21px;
+
+  @media #{$lg} {
+    padding: 35px 40px;
+  }
 
   .navigation {
     position: relative;
@@ -86,10 +90,14 @@ header {
     &__button {
       z-index: 30;
       position: fixed;
-      right: 25px;
+      right: 21px;
       width: 50%;
       display: flex;
       justify-content: flex-end;
+
+      @media #{$lg} {
+        right: 25px;
+      }
 
       &__cta {
         margin-right: 15px;
@@ -166,6 +174,7 @@ header {
 
   #menu {
     z-index: -20;
+    pointer-events: none;
     width: 100%;
     overflow-y: hidden;
     position: fixed;
@@ -357,6 +366,7 @@ header {
 
     &.open {
       z-index: 20;
+      pointer-events: inherit;
       .menu-bg-1 {
         transform: translateY(0);
       }

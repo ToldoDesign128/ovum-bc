@@ -1,6 +1,10 @@
 .loop-blog {
-  padding: 20px;
+  margin-top: 75px;
+  padding: 0 20px;
 
+  @media #{$lg} {
+    margin-top: 150px;
+  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -46,6 +50,7 @@
             font-weight: 600;
 
             @media #{$xl} {
+              padding: 13px 20px;
               font-size: 16.5px;
               line-height: 20px;
             }

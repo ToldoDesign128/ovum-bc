@@ -141,6 +141,17 @@ if (function_exists('acf_add_options_page')) {
 	));
 }
 
+if (function_exists('acf_add_options_page')) {
+	acf_add_options_page(array(
+		'page_title'    => 'Opzioni',
+		'menu_title'   => 'Opzioni',
+		'menu_slug'    => 'opzioni-settings',
+		'capability'   => 'edit_posts',
+		'icon_url'      => 'dashicons-admin-links',
+		'redirect'      => true
+	));
+}
+
 // Add style and script
 function add_theme_scripts()
 {

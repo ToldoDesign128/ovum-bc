@@ -37,6 +37,7 @@ $primary-font: "Borna", serif;
 @import '/assets/css/scss-parts/block/faq.scss';
 @import '/assets/css/scss-parts/block/footer.scss';
 @import '/assets/css/scss-parts/block/loop-blog.scss';
+@import '/assets/css/scss-parts/block/loop-video.scss';
 @import '/assets/css/scss-parts/block/postblock.scss';
 @import '/assets/css/scss-parts/block/ped.scss';
 @import '/assets/css/scss-parts/block/quote.scss';
@@ -44,4 +45,6 @@ $primary-font: "Borna", serif;
 @import '/assets/css/scss-parts/block/video.scss';
 
 //Hero
+@import '/assets/css/scss-parts/hero/hero-about.scss';
+@import '/assets/css/scss-parts/hero/hero-category.scss';
 @import '/assets/css/scss-parts/hero/hero-home.scss';

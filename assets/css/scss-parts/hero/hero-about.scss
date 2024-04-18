@@ -1,0 +1,93 @@
+.hero-about {
+  padding-top: 100px;
+
+  @media #{$lg} {
+    padding-top: 235px;
+  }
+  &__content {
+    padding: 10px 20px;
+
+    @media #{$lg} {
+      padding: 10px 20px;
+    }
+    @media #{$xl} {
+      width: 78%;
+    }
+    @media #{$xxl} {
+      width: 72%;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 15px;
+
+      @media #{$lg} {
+        font-size: 16.5px;
+        line-height: 20px;
+      }
+    }
+    &__subtitle {
+      margin-top: 10px;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: -0.51px;
+
+      @media #{$lg} {
+        margin-top: 30px;
+        font-size: 74px;
+        line-height: 80px;
+        letter-spacing: -1.23px;
+      }
+      @media #{$xxl} {
+        margin-top: 30px;
+        font-size: 82px;
+        line-height: 86px;
+        letter-spacing: -1.23px;
+      }
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        width: 100%;
+        margin-top: 25px;
+        font-size: 16.5px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.22px;
+
+        @media #{$lg} {
+          width: 45%;
+          margin-top: 50px;
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+
+      @media #{$lg} {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.about-cover {
+  margin-top: 40px;
+  padding: 5px;
+  width: 100%;
+  overflow: clip;
+
+  &__image {
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  @media #{$lg} {
+    margin-top: 150px;
+  }
+}
