@@ -1,0 +1,107 @@
+.hero-blog {
+  padding-top: 100px;
+
+  @media #{$lg} {
+    padding-top: 225px;
+  }
+  &__content {
+    padding: 10px 20px;
+
+    @media #{$xl} {
+      width: 60%;
+    }
+    @media #{$xxl} {
+      width: 55%;
+    }
+
+    &__title {
+      margin-top: 10px;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: -0.51px;
+
+      @media #{$lg} {
+        margin-top: 15px;
+        font-size: 74px;
+        line-height: 80px;
+        letter-spacing: -1.23px;
+      }
+      @media #{$xxl} {
+        font-size: 82px;
+        line-height: 86px;
+        letter-spacing: -1.23px;
+      }
+    }
+  }
+
+  &__category {
+    margin-top: 40px;
+    padding: 10px 20px;
+    overflow-x: clip;
+
+    @media #{$lg} {
+      margin-top: 150px;
+    }
+
+    &__item {
+      height: 270px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-radius: 30px;
+      overflow: clip;
+
+      @media #{$lg} {
+        height: 320px;
+      }
+
+      @media #{$xl} {
+        height: 370px;
+      }
+
+      &__title {
+        text-align: center;
+        z-index: 5;
+        color: $white;
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 500;
+        letter-spacing: -0.42px;
+
+        @media #{$lg} {
+          font-size: 52px;
+          line-height: 60px;
+          letter-spacing: -0.78px;
+        }
+      }
+
+      &__button {
+        padding: 15px 18px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+
+        @media #{$lg} {
+          bottom: 20px;
+          right: 20px;
+        }
+
+        .text, .text-1, .text-2{
+          left: auto;
+        }
+      }
+
+      &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -30,6 +30,9 @@ $primary-font: "Borna", serif;
 //Component
 @import '/assets/css/scss-parts/component/swiper.scss';
 
+// Page
+@import '/assets/css/scss-parts/page/contatti.scss';
+
 // Block
 @import '/assets/css/scss-parts/block/button.scss';
 @import '/assets/css/scss-parts/block/cta.scss';
@@ -46,5 +49,6 @@ $primary-font: "Borna", serif;
 
 //Hero
 @import '/assets/css/scss-parts/hero/hero-about.scss';
+@import '/assets/css/scss-parts/hero/hero-blog.scss';
 @import '/assets/css/scss-parts/hero/hero-category.scss';
 @import '/assets/css/scss-parts/hero/hero-home.scss';
