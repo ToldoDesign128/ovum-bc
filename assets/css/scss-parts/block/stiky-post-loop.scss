@@ -1,7 +1,17 @@
 // Stiky Post Loop
 .stikyloop {
   padding: 20px;
+  padding-bottom: 0;
   overflow-x: clip;
+  padding-top: 75px;
+
+  @media #{$lg} {
+    padding-top: 100px;
+  }
+  @media #{$xl} {
+    padding-top: 150px;
+  }
+
   &__slider {
     ul {
       li {

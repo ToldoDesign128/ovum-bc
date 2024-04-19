@@ -62,6 +62,13 @@
             };
             ?>
         </div>
+        <div class="navigation-wrap">
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+        </div>
 
     </div>
 </section>

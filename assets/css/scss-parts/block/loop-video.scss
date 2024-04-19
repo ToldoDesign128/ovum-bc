@@ -1,9 +1,10 @@
 .loop-video {
   margin-top: 75px;
   padding: 0 20px;
+  padding-top: 75px;
 
-  @media #{$lg} {
-    margin-top: 150px;
+  @media #{$xl} {
+    padding-top: 150px;
   }
 
   &__title {
@@ -30,7 +31,7 @@
     }
 
     &__item {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
       iframe {
         max-height: 200px;
         width: 100%;

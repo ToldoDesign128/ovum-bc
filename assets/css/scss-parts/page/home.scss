@@ -1,0 +1,196 @@
+.about-home {
+  padding: 0 20px;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$lg} {
+    padding-top: 100px;
+}
+@media #{$xl} {
+    padding-top: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 100%;
+
+    @media #{$xl} {
+      width: 58%;
+    }
+
+    h3 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 15px;
+
+      @media #{$lg} {
+        font-size: 16.5px;
+        line-height: 20px;
+      }
+    }
+    h2 {
+      margin-top: 10px;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: -0.51px;
+
+      @media #{$lg} {
+        margin-top: 30px;
+        font-size: 52px;
+        line-height: 60px;
+      }
+    }
+
+    &__text {
+      margin-top: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media #{$lg} {
+        margin-top: 40px;
+        flex-direction: row;
+        gap: 75px;
+      }
+
+      p {
+        width: 100%;
+        margin-top: 25px;
+        font-size: 16.5px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.25px;
+
+        @media #{$lg} {
+          width: auto;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    &__cards {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media #{$xl} {
+        margin-top: 58px;
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      &__item {
+        margin-top: 10px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: $light-gray;
+        border-radius: 30px;
+
+        @media #{$xl} {
+          min-height: 250px;
+          padding: 25px 30px;
+        }
+
+        &__title {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: -0.36px;
+
+          @media #{$lg} {
+            font-size: 38px;
+            line-height: 46px;
+            letter-spacing: -0.57px;
+          }
+        }
+        &__text {
+          margin-top: 5px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: -0.21px;
+
+          @media #{$lg} {
+            margin-top: 15px;
+            font-size: 16.5px;
+            line-height: 22px;
+            letter-spacing: -0.25px;
+          }
+        }
+      }
+    }
+  }
+
+  &__image {
+    margin-top: 50px;
+    width: 100%;
+    height: 440px;
+    position: relative;
+    overflow: clip;
+    border-radius: 30px;
+
+    @media #{$xl} {
+      margin-top: 0px;
+      height: 710px;
+      width: 30%;
+    }
+    @media #{$xxl} {
+        height: 640px;
+        width: 30%;
+      }
+    &__bg {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        rgba(46, 46, 45, 0.75) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    img {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__box {
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+
+      p {
+        color: $white;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -0.42px;
+      }
+      a {
+        margin-top: 10px;
+        width: fit-content;
+      }
+    }
+  }
+}

@@ -2,6 +2,15 @@
 .postblock {
   padding: 20px;
   overflow-x: clip;
+  padding-top: 75px;
+
+  @media #{$lg} {
+    padding-top: 100px;
+  }
+  @media #{$xl} {
+    padding-top: 150px;
+  }
+
   &__slider {
     ul {
       li {

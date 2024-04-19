@@ -29,8 +29,8 @@
             <?php if ($custom_loop->have_posts()) : while ($custom_loop->have_posts()) : $custom_loop->the_post(); ?>
                     <li class="swiper-slide">
                         <article class="sticky-content">
-                            <p class="sticky-content__cat"><?php $cat = get_the_category();
-                                                            echo $cat[0]->cat_name; ?></p>
+                            <h3 class="sticky-content__cat"><?php $cat = get_the_category();
+                                                            echo $cat[0]->cat_name; ?></h3>
                             <p class="sticky-content__title"><?php the_title(); ?></p>
                             <p class="sticky-content__extract"><?php echo esc_html(get_field('estratto')); ?></p>
 
