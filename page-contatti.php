@@ -23,7 +23,7 @@ get_header();
                         $link_contatti_url = $link_contatti['url'];
                         $link_contatti_title = $link_contatti['title'];
                         $link_contatti_target = $link_contatti['target'] ? $link_contatti['target'] : '_self'; ?>
-                        
+
                         <div class="hero-contatti__text__box__container">
                             <p class="hero-contatti__text__box__container__text"><?php echo esc_html($etichetta_contatti); ?></p>
                             <a class="hero-contatti__text__box__container__link" href="<?php echo esc_url($link_contatti_url); ?>" target="<?php echo esc_attr($link_contatti_target); ?>"><?php echo esc_html($link_contatti_title); ?></a>
@@ -57,7 +57,7 @@ get_header();
             <p class="hero-contatti__form__text"><?php echo wp_kses_post(get_field('testo_form_contatti')); ?></p>
 
             <div class="hero-contatti__form__gravity">
-                <?php do_shortcode('[gravityform id="1" title="true"]');?>
+                <?php gravity_form(1, false, false, false, '',  true, 12); ?>
             </div>
         </div>
     </section>

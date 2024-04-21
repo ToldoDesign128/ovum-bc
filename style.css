@@ -1057,6 +1057,18 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
      object-fit: cover;
 }
 @media (min-width : 768px) {
+  .articolo__hero__thumb img,
+  .articolo__hero__thumb iframe {
+    min-height: 400px;
+  }
+}
+@media (min-width : 1024px) {
+  .articolo__hero__thumb img,
+  .articolo__hero__thumb iframe {
+    min-height: 600px;
+  }
+}
+@media (min-width : 768px) {
   .articolo__hero__thumb {
     max-height: 400px;
     min-height: 400px;
@@ -1385,6 +1397,7 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
   width: 30%;
 }
 .articolo__control__buttons span a {
+  display: block;
   background-color: #F2F0F0;
   border-radius: 30px;
   padding: 30px;
