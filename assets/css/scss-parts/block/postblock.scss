@@ -22,13 +22,16 @@
 
           &__image {
             position: relative;
-            img, iframe {
+            img,
+            iframe {
               width: 100%;
+              min-height: 200px;
               max-height: 200px;
               object-fit: cover;
               border-radius: 30px;
 
               @media #{$xl} {
+                min-height: 260px;
                 max-height: 260px;
               }
             }
@@ -51,15 +54,18 @@
               }
             }
 
-            &__button{
-                position: absolute;
-                bottom: 15px;
-                right: 15px;
-                padding: 15px 18px;
+            &__button {
+              position: absolute;
+              bottom: 15px;
+              right: 15px;
+              padding: 15px 18px;
 
-                .text, .text-1, .text-2{
-                    left: unset;
-                }
+              .text,
+              .text-1,
+              .text-2 {
+                left: 50%;
+                transform: translateX(-50%);
+              }
             }
           }
 

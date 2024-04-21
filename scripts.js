@@ -44,7 +44,7 @@ const swiperStickyPost = new Swiper('.swiperStickyPost', {
 
     pagination: {
         el: ".swiper-pagination",
-      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -72,7 +72,7 @@ const swiperPostBlock = new Swiper('.swiperPostBlock', {
 
     pagination: {
         el: ".swiper-pagination",
-      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -100,7 +100,7 @@ const swiperCat = new Swiper('.swiperCat', {
 
     pagination: {
         el: ".swiper-pagination",
-      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -117,7 +117,7 @@ const swiperPrima = new Swiper('.swiperPrima', {
 
     pagination: {
         el: ".swiper-pagination",
-      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -134,7 +134,7 @@ const swiperQuote = new Swiper('.swiperQuote', {
 
     pagination: {
         el: ".swiper-pagination",
-      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -157,7 +157,7 @@ const swiperVideo = new Swiper('.swiperVideo', {
 
     pagination: {
         el: ".swiper-pagination",
-      },
+    },
 
     // Navigation arrows
     navigation: {
