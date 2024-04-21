@@ -129,3 +129,31 @@ const swiperVideo = new Swiper('.swiperVideo', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+// Post block
+const swipePostGallery= new Swiper('.swipePostGallery', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

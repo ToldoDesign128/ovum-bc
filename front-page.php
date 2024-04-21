@@ -176,6 +176,11 @@
         </div>
     </section>
 
+    <!-- Prima e dopo -->
+    <div class="container">
+        <h3 class="titolo-ped-home"><?php echo esc_html(get_field('titolo_ped_home')); ?></h3>
+    </div>
+
     <?php get_template_part("template-parts/prima-e-dopo"); ?>
 
     <?php get_template_part("template-parts/post-block"); ?>

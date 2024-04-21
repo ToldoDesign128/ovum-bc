@@ -4,14 +4,8 @@
   overflow-x: clip;
   display: flex;
   flex-direction: column;
-  padding-top: 75px;
-
-  @media #{$lg} {
-    padding-top: 100px;
-  }
 
   @media #{$xl} {
-    padding-top: 150px;
     padding-bottom: 68px;
     flex-direction: row;
     justify-content: space-between;
