@@ -211,6 +211,12 @@
   }
 
   &__image {
+    width: 100%;
+
+    @media #{$lg} {
+      width: 30%;
+    }
+
     &__title {
       font-size: 13px;
       font-weight: 600;
@@ -224,25 +230,36 @@
     }
 
     &__box {
+      margin-top: 100px;
+      max-width: 385px;
+      max-height: 860px;
+      height: 100%;
       display: none;
       flex-direction: column;
       position: relative;
-      left: 20px;
-      bottom: 20px;
+      border-radius: 30px;
+      overflow: clip;
+      background-color: $light-gray;
 
-      @media #{$xl} {
+      @media #{$xxl} {
         display: flex;
+        max-height: 660px;
+
       }
 
       img {
+        padding: 40px;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
       a {
+        position: absolute;
+        bottom: 50px;
+        left: 45px;
         margin-top: 10px;
         width: fit-content;
       }
@@ -251,14 +268,27 @@
 
   &__content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media #{$xl} {
-      width: 58%;
+      width: 65%;
     }
 
     &__service1,
     &__service2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      @media #{$xl} {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
       &__title {
+        width: 100%;
         margin-top: 25px;
         font-size: 34px;
         font-weight: 500;
@@ -266,12 +296,22 @@
         letter-spacing: -0.51px;
 
         @media #{$lg} {
-          margin-top: 30px;
+          width: 40%;
+          margin-top: 0;
+          font-size: 44px;
+          line-height: 52px;
+        }
+        @media #{$xxl} {
           font-size: 52px;
           line-height: 60px;
         }
       }
       &__box {
+        width: 100%;
+
+        @media #{$lg} {
+          width: 55%;
+        }
         &__subtitle {
           margin-top: 15px;
           font-size: 13px;
@@ -280,21 +320,18 @@
           line-height: 15px;
 
           @media #{$lg} {
-            margin-top: 25px;
+            margin-top: 0;
             font-size: 16.5px;
             line-height: 20px;
           }
         }
         &__text {
-          margin-top: 12px;
+          margin-top: 25px;
+          padding-bottom: 13px;
           font-size: 16.5px;
           font-weight: 400;
           line-height: 22px;
           letter-spacing: -0.25px;
-
-          &:first-child{
-            margin-top: 25px;
-          }
 
           @media #{$lg} {
             font-size: 18px;
@@ -303,37 +340,46 @@
           }
         }
         &__repeater {
-          margin-top: 25px;
+          margin-top: 12px;
           display: flex;
           flex-direction: row;
           align-items: center;
-          img{
+
+          img {
             height: 10px;
             width: auto;
             margin-right: 12px;
           }
-          p{
-          font-size: 16.5px;
-          font-weight: 400;
-          line-height: 22px;
-          letter-spacing: -0.25px;
+          p {
+            font-size: 16.5px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.25px;
 
-          @media #{$lg} {
-            font-size: 18px;
-            line-height: 24px;
-            letter-spacing: 0;
-          }
+            @media #{$lg} {
+              font-size: 18px;
+              line-height: 24px;
+              letter-spacing: 0;
+            }
           }
         }
       }
     }
 
-    &__service1{
+    &__service1 {
       padding-bottom: 50px;
       border-bottom: 1px solid $light-gray;
+
+      @media #{$lg} {
+        padding-bottom: 75px;
+      }
     }
-    &__service2{
+    &__service2 {
       padding-top: 30px;
+
+      @media #{$lg} {
+        padding-top: 75px;
+      }
     }
   }
 }

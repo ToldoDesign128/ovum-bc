@@ -731,6 +731,14 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
     justify-content: space-between;
   }
 }
+.servizi-home__image {
+  width: 100%;
+}
+@media (min-width : 1024px) {
+  .servizi-home__image {
+    width: 30%;
+  }
+}
 .servizi-home__image__title {
   font-size: 13px;
   font-weight: 600;
@@ -744,40 +752,65 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
   }
 }
 .servizi-home__image__box {
+  margin-top: 100px;
+  max-width: 385px;
+  max-height: 860px;
+  height: 100%;
   display: none;
   flex-direction: column;
   position: relative;
-  left: 20px;
-  bottom: 20px;
+  border-radius: 30px;
+  overflow: clip;
+  background-color: #F2F0F0;
 }
-@media (min-width : 1280px) {
+@media (min-width : 1536px) {
   .servizi-home__image__box {
     display: flex;
+    max-height: 660px;
   }
 }
 .servizi-home__image__box img {
+  padding: 40px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .servizi-home__image__box a {
+  position: absolute;
+  bottom: 50px;
+  left: 45px;
   margin-top: 10px;
   width: -moz-fit-content;
   width: fit-content;
 }
 .servizi-home__content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media (min-width : 1280px) {
   .servizi-home__content {
-    width: 58%;
+    width: 65%;
+  }
+}
+.servizi-home__content__service1, .servizi-home__content__service2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width : 1280px) {
+  .servizi-home__content__service1, .servizi-home__content__service2 {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .servizi-home__content__service1__title, .servizi-home__content__service2__title {
+  width: 100%;
   margin-top: 25px;
   font-size: 34px;
   font-weight: 500;
@@ -786,9 +819,24 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
 }
 @media (min-width : 1024px) {
   .servizi-home__content__service1__title, .servizi-home__content__service2__title {
-    margin-top: 30px;
+    width: 40%;
+    margin-top: 0;
+    font-size: 44px;
+    line-height: 52px;
+  }
+}
+@media (min-width : 1536px) {
+  .servizi-home__content__service1__title, .servizi-home__content__service2__title {
     font-size: 52px;
     line-height: 60px;
+  }
+}
+.servizi-home__content__service1__box, .servizi-home__content__service2__box {
+  width: 100%;
+}
+@media (min-width : 1024px) {
+  .servizi-home__content__service1__box, .servizi-home__content__service2__box {
+    width: 55%;
   }
 }
 .servizi-home__content__service1__box__subtitle, .servizi-home__content__service2__box__subtitle {
@@ -800,20 +848,18 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
 }
 @media (min-width : 1024px) {
   .servizi-home__content__service1__box__subtitle, .servizi-home__content__service2__box__subtitle {
-    margin-top: 25px;
+    margin-top: 0;
     font-size: 16.5px;
     line-height: 20px;
   }
 }
 .servizi-home__content__service1__box__text, .servizi-home__content__service2__box__text {
-  margin-top: 12px;
+  margin-top: 25px;
+  padding-bottom: 13px;
   font-size: 16.5px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.25px;
-}
-.servizi-home__content__service1__box__text:first-child, .servizi-home__content__service2__box__text:first-child {
-  margin-top: 25px;
 }
 @media (min-width : 1024px) {
   .servizi-home__content__service1__box__text, .servizi-home__content__service2__box__text {
@@ -823,7 +869,7 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
   }
 }
 .servizi-home__content__service1__box__repeater, .servizi-home__content__service2__box__repeater {
-  margin-top: 25px;
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -850,8 +896,18 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
   padding-bottom: 50px;
   border-bottom: 1px solid #F2F0F0;
 }
+@media (min-width : 1024px) {
+  .servizi-home__content__service1 {
+    padding-bottom: 75px;
+  }
+}
 .servizi-home__content__service2 {
   padding-top: 30px;
+}
+@media (min-width : 1024px) {
+  .servizi-home__content__service2 {
+    padding-top: 75px;
+  }
 }
 
 .button-white,
