@@ -57,7 +57,9 @@ get_header();
             <p class="hero-contatti__form__text"><?php echo wp_kses_post(get_field('testo_form_contatti')); ?></p>
 
             <div class="hero-contatti__form__gravity">
-                <?php gravity_form(1, false, false, false, '',  true, 12); ?>
+               <?php
+                gravity_form(1, false, false, false, '',  true, 12); 
+                ?>
             </div>
         </div>
     </section>

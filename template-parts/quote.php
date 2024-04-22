@@ -4,7 +4,7 @@
         <?php
         $custom_loop = new WP_Query(array(
             'post_type' => 'recensioni',
-            'posts_per_page' => 999,
+            'posts_per_page' => 100,
             'orderby'        => 'menu_order',
             'order'          => 'ASC'
         )); ?>

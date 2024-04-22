@@ -1,7 +1,7 @@
 <section class="container cta">
     <div class="cta__content">
         <h2 class="cta__content__title"><?php echo esc_html(get_field('titolo_cta_footer', 'option')); ?></h2>
-        <p class="cta__content__text"><?php echo wp_kses_post(get_field('testo_cta_footer', 'option')); ?></p>
+        <p class="cta__content__text wysiwyg"><?php echo wp_kses_post(get_field('testo_cta_footer', 'option')); ?></p>
         <?php
         $cta_link = get_field('bottone_cta_footer', 'option');
         if ($cta_link) :

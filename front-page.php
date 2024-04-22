@@ -10,8 +10,8 @@
             <h3><?php echo esc_html(get_field('titolo_about_home')); ?></h3>
             <h2><?php echo esc_html(get_field('titolo_sezione_about_home')); ?></h2>
             <div class="about-home__content__text">
-                <p><?php echo wp_kses_post(get_field('testo_1_about_home')); ?></p>
-                <p><?php echo wp_kses_post(get_field('testo_2_about_home')); ?></p>
+                <div class="wysiwyg"><?php the_field('testo_1_about_home'); ?></div>
+                <div class="wysiwyg"><?php the_field('testo_2_about_home'); ?></div>
             </div>
             <div class="about-home__content__cards">
                 <?php
@@ -134,7 +134,7 @@
                 </div>
                 <div class="servizi-home__content__service1__box">
                     <h2 class="servizi-home__content__service1__box__subtitle"><?php echo esc_html(get_field('sottotitolo_1_servizi_home')); ?></h2>
-                    <p class="servizi-home__content__service1__box__text"><?php echo wp_kses_post(get_field('testo_1_servizi_home')); ?></p>
+                    <div class="servizi-home__content__service1__box__text wysiwyg"><?php the_field('testo_1_servizi_home'); ?></div>
                     <?php
                     if (have_rows('elenco_1_servizi_home')) :
                         while (have_rows('elenco_1_servizi_home')) : the_row();
@@ -156,7 +156,7 @@
                 </div>
                 <div class="servizi-home__content__service2__box">
                     <h2 class="servizi-home__content__service2__box__subtitle"><?php echo esc_html(get_field('sottotitolo_2_servizi_home')); ?></h2>
-                    <p class="servizi-home__content__service2__box__text"><?php echo wp_kses_post(get_field('testo_2_servizi_home')); ?></p>
+                    <div class="servizi-home__content__service2__box__text wysiwyg"><?php the_field('testo_2_servizi_home'); ?></div>
                     <?php
                     if (have_rows('elenco_2_servizi_home')) :
                         while (have_rows('elenco_2_servizi_home')) : the_row();
@@ -183,7 +183,18 @@
 
     <?php get_template_part("template-parts/prima-e-dopo"); ?>
 
+    <!-- Post Block -->
+    <div class="container">
+        <h3 class="titolo-ped-home"><?php echo esc_html(get_field('titolo_sezione_blog_home')); ?></h3>
+        <h2 class="subtitolo-post-home"><?php echo esc_html(get_field('sottotitolo_sezione_blog_home')); ?></h2>
+    </div>
+
     <?php get_template_part("template-parts/post-block"); ?>
+
+    <!-- Video Block -->
+    <div class="container">
+        <h3 class="titolo-ped-home"><?php echo esc_html(get_field('titolo_sezione_video_home')); ?></h3>
+    </div>
 
     <?php get_template_part("template-parts/video-block"); ?>
 

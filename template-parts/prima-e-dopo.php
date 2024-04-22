@@ -39,7 +39,7 @@
             <?php
             $custom_loop = new WP_Query(array(
                 'post_type'     => 'ped',
-                'posts_per_page' => 999,
+                'posts_per_page' => 5,
                 'orderby'        => 'menu_order',
                 'order'          => 'ASC',
             )); ?>
@@ -47,22 +47,11 @@
             <?php if ($custom_loop->have_posts()) : while ($custom_loop->have_posts()) : $custom_loop->the_post(); ?>
 
                     <li class="swiper-slide">
-
-                        <div class="pedImage">
-                            <div class="pedImage__box">
-                                <?php
-                                $prima = get_field('foto_prima_ped');
-                                if (!empty($prima)) : ?>
-                                    <img src="<?php echo esc_url($prima['url']); ?>" alt="<?php echo esc_attr($prima['alt']); ?>" class="pedImage__box__image"/>
-                                <?php endif; ?>
-                                <?php
-                                $dopo = get_field('foto_dopo_ped');
-                                if (!empty($dopo)) : ?>
-                                    <img src="<?php echo esc_url($dopo['url']); ?>" alt="<?php echo esc_attr($dopo['alt']); ?>" class="pedImage__box__image"/>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-
+                        <?php
+                        $prima = get_field('foto_prima_ped');
+                        if (!empty($prima)) : ?>
+                            <img src="<?php echo esc_url($prima['url']); ?>" alt="<?php echo esc_attr($prima['alt']); ?>" />
+                        <?php endif; ?>
                     </li>
 
                     <?php wp_reset_postdata(); ?>

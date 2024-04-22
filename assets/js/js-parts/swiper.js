@@ -5,6 +5,7 @@ const swiperStickyPost = new Swiper('.swiperStickyPost', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     pagination: {
         el: ".swiper-pagination",
@@ -22,6 +23,7 @@ const swiperPostBlock = new Swiper('.swiperPostBlock', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     breakpoints: {
         768: {
@@ -50,6 +52,7 @@ const swiperCat = new Swiper('.swiperCat', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     breakpoints: {
         768: {
@@ -78,6 +81,7 @@ const swiperPrima = new Swiper('.swiperPrima', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     pagination: {
         el: ".swiper-pagination",
@@ -95,6 +99,7 @@ const swiperQuote = new Swiper('.swiperQuote', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     pagination: {
         el: ".swiper-pagination",
@@ -112,6 +117,7 @@ const swiperVideo = new Swiper('.swiperVideo', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     breakpoints: {
         1280: {
@@ -135,6 +141,7 @@ const swipePostGallery= new Swiper('.swipePostGallery', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     breakpoints: {
         768: {

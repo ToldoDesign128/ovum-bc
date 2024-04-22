@@ -5,7 +5,7 @@
             <?php
             $custom_loop = new WP_Query(array(
                 'post_type' => 'post',
-                'posts_per_page' => 10,
+                'posts_per_page' => 5,
                 'orderby'        => 'menu_order',
                 'order'          => 'ASC'
             )); ?>

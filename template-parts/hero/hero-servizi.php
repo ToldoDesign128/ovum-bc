@@ -4,8 +4,8 @@
         <h1 class="hero-about__content__title"><?php echo esc_html( get_field('titolo_hero_servizi') ); ?></h1>
         <h2 class="hero-about__content__subtitle"><?php echo esc_html( get_field('sottotitolo_hero_servizi') ); ?></h2>
         <div class="hero-about__content__text">
-            <p><?php echo wp_kses_post ( get_field('testo_1_hero_servizi') ); ?></p>
-            <p><?php echo wp_kses_post ( get_field('testo_2_hero_servizi') ); ?></p>
+            <div class="wysiwyg"><?php the_field('testo_1_hero_servizi'); ?></div>
+            <div class="wysiwyg"><?php the_field('testo_2_hero_servizi'); ?></div>
         </div>
     </div>
 </section>

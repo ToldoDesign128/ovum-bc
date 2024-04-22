@@ -32,8 +32,10 @@ $primary-font: "Borna", serif;
 @import '/assets/css/scss-parts/component/yt-player.scss';
 
 // Page
+@import '/assets/css/scss-parts/page/about.scss';
 @import '/assets/css/scss-parts/page/contatti.scss';
 @import '/assets/css/scss-parts/page/home.scss';
+@import '/assets/css/scss-parts/page/servizi.scss';
 @import '/assets/css/scss-parts/page/single.scss';
 
 // Block
@@ -49,6 +51,7 @@ $primary-font: "Borna", serif;
 @import '/assets/css/scss-parts/block/quote.scss';
 @import '/assets/css/scss-parts/block/stiky-post-loop.scss';
 @import '/assets/css/scss-parts/block/video.scss';
+@import '/assets/css/scss-parts/block/wysiwyg.scss';
 
 //Hero
 @import '/assets/css/scss-parts/hero/hero-about.scss';

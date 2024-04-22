@@ -2,7 +2,7 @@
 /* Template Name: BC Servizi */
 get_header();
 ?>
-<div class="placeholder">
+<main>
     <?php get_template_part("template-parts/hero/hero-servizi"); ?>
-</div>
+</main>
 <?php get_footer(); ?>

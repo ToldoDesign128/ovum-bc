@@ -1,13 +1,13 @@
 .videorecensione {
   padding: 20px;
   overflow-x: clip;
-  padding-top: 75px;
+  padding-top: 30px;
 
   @media #{$lg} {
-    padding-top: 100px;
+    padding-top: 50px;
   }
   @media #{$xl} {
-    padding-top: 150px;
+    padding-top: 60px;
   }
 
   &__slider {
@@ -31,14 +31,14 @@
 
           &.nome-video {
             margin-top: 25px;
-            font-size: 16.5px;
+            font-size: 16px;
             font-weight: 500;
             line-height: 22px;
             letter-spacing: -0.25px;
           }
 
           @media #{$lg} {
-            font-size: 16.5px;
+            font-size: 16px;
             line-height: 22px;
             letter-spacing: -0.25px;
 

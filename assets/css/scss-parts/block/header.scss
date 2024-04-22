@@ -17,7 +17,6 @@ header {
     flex-direction: row;
 
     &__logo {
-      z-index: 30;
       width: 50%;
 
       @media #{$xl} {

@@ -3,14 +3,17 @@
 // Accordion
 jQuery(document).ready(function() {
     jQuery('.faq__list__panel__title').click(function() {
+        var isActive = jQuery(this).hasClass('title-active');
+        
         jQuery('.faq__list__panel__text').removeClass('panel-active');
-        jQuery(this).next('.faq__list__panel__text').addClass('panel-active');
         jQuery('.faq__list__panel__title').removeClass('title-active');
-        jQuery(this).addClass('title-active');
+        
+        if (!isActive) {
+            jQuery(this).next('.faq__list__panel__text').addClass('panel-active');
+            jQuery(this).addClass('title-active');
+        }
     });
 });
-
-
 // Menu
 jQuery("#hamburgerButton").click(function () {
   jQuery("#hamburgerButton").toggleClass("is-active");
@@ -33,7 +36,6 @@ jQuery(document).ready(function() {
   });
 });
 
-
 // Swiper
 
 // Sticky Post block
@@ -41,6 +43,7 @@ const swiperStickyPost = new Swiper('.swiperStickyPost', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     pagination: {
         el: ".swiper-pagination",
@@ -58,6 +61,7 @@ const swiperPostBlock = new Swiper('.swiperPostBlock', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     breakpoints: {
         768: {
@@ -86,6 +90,7 @@ const swiperCat = new Swiper('.swiperCat', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     breakpoints: {
         768: {
@@ -114,6 +119,7 @@ const swiperPrima = new Swiper('.swiperPrima', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     pagination: {
         el: ".swiper-pagination",
@@ -131,6 +137,7 @@ const swiperQuote = new Swiper('.swiperQuote', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     pagination: {
         el: ".swiper-pagination",
@@ -148,6 +155,7 @@ const swiperVideo = new Swiper('.swiperVideo', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     breakpoints: {
         1280: {
@@ -171,6 +179,7 @@ const swipePostGallery= new Swiper('.swipePostGallery', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
 
     breakpoints: {
         768: {

@@ -10,7 +10,7 @@
                     'post__in' => $sticky,
                     'category_name'  => 'chiropratica',
                     'ignore_sticky_posts' => 1,
-                    'posts_per_page' => 10,
+                    'posts_per_page' => 5,
                     'orderby'        => 'menu_order',
                     'order'          => 'ASC'
                 ));
@@ -19,7 +19,7 @@
                     'post_type' => 'post',
                     'post__in' => $sticky,
                     'ignore_sticky_posts' => 1,
-                    'posts_per_page' => 10,
+                    'posts_per_page' => 5,
                     'orderby'        => 'menu_order',
                     'order'          => 'ASC'
                 ));

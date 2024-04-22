@@ -1,0 +1,309 @@
+.mission {
+  padding: 0 20px;
+  padding-top: 75px;
+
+  @media #{$xl} {
+    padding-top: 150px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$xl} {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__box {
+      width: 100%;
+
+      @media #{$xl} {
+        width: 65%;
+      }
+
+      @media #{$xxl} {
+        width: 55%;
+      }
+
+      h3 {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 15px;
+
+        @media #{$lg} {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      &__sub {
+        margin-top: 10px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -0.42px;
+
+        @media #{$lg} {
+          margin-top: 30px;
+          font-size: 52px;
+          line-height: 60px;
+          letter-spacing: -0.78px;
+        }
+      }
+      &__cards {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media #{$md} {
+          margin-top: 40px;
+          flex-direction: row;
+          gap: 20px;
+        }
+
+        &__item {
+          margin-top: 10px;
+          width: 100%;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          background-color: $light-gray;
+          border-radius: 30px;
+
+          @media #{$xl} {
+            min-height: 250px;
+            padding: 25px 30px;
+          }
+
+          &__title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: -0.36px;
+
+            @media #{$lg} {
+              font-size: 38px;
+              line-height: 46px;
+              letter-spacing: -0.57px;
+            }
+          }
+          &__text {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.21px;
+
+            @media #{$lg} {
+              margin-top: 15px;
+              font-size: 16px;
+              line-height: 22px;
+              letter-spacing: -0.25px;
+            }
+          }
+        }
+      }
+    }
+
+    &__image {
+      display: none;
+      background-color: $light-gray;
+      overflow: clip;
+
+      @media #{$xl} {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        height: 100%;
+        max-height: 650px;
+        padding: 20px;
+      }
+
+      img {
+        height: 100%;
+        max-height: 610px;
+        width: auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__content2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+    @media #{$xl} {
+      margin-top: 94px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    h2 {
+      width: 100%;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: -0.51px;
+
+      @media #{$xl} {
+        width: 25%;
+        font-size: 38px;
+        line-height: 46px;
+        letter-spacing: -0.57px;
+      }
+    }
+
+    &__box {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+
+      @media #{$xl} {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+      }
+
+      .wysiwyg {
+        width: 100%;
+        margin-top: 25px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.25px;
+
+        @media #{$xl} {
+          width: 47%;
+          margin-top: 0;
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.scaricabili {
+  padding: 0 20px;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$xl} {
+    padding-top: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-top: 40px;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+
+    @media #{$xl} {
+      width: 35%;
+      margin-top: 0;
+      order: 1;
+    }
+
+    h3 {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 15px;
+
+      @media #{$lg} {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    h2 {
+      margin-top: 10px;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: -0.51px;
+
+      @media #{$lg} {
+        margin-top: 30px;
+        font-size: 52px;
+        line-height: 60px;
+        letter-spacing: -0.78px;
+      }
+    }
+    &__text {
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: -0.25px;
+
+      @media #{$lg} {
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin-top: 15px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &__file {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media #{$md} {
+        justify-content: flex-start;
+        gap: 20px;
+      }
+
+      a {
+        padding: 15px;
+
+        @media #{$lg} {
+          padding: 15px 30px;
+        }
+
+        .text,
+        .text-1,
+        .text-2 {
+          left: 15px;
+
+          @media #{$lg} {
+            left: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  &__image {
+    order: 1;
+    min-height: 224px;
+    max-height: 225px;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+
+    @media #{$xl} {
+      width: 55%;
+      margin-top: 0;
+      order: 2;
+      min-height: 600px;
+      max-height: 625px;
+    }
+  }
+}
