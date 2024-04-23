@@ -1,3 +1,16 @@
+<!-- CTA Mobile -->
+<div id="infoBtn" class="mobile-cta">
+    <a href="contatti" class="mobile-cta__button">
+        Prenota una visita
+        <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024">
+            <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(-10.076 -9.9)">
+                <path id="Tracciato_26" data-name="Tracciato 26" d="M10.5,20.5l10-10" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.2" />
+                <path id="Tracciato_27" data-name="Tracciato 27" d="M10.5,10.5h10v10" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="1.2" />
+            </g>
+        </svg>
+    </a>
+</div>
+
 <footer>
     <div class="container footer">
         <div class="footer__col__1">
@@ -216,8 +229,15 @@
                 <?php endif; ?>
             </div>
             <div class="footer__privacy__return">
-                <button>
+                <button id="ScrollTopBtn">
                     Back to top
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024">
+                        <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(-10.076 -9.9)">
+                            <path id="Tracciato_26" data-name="Tracciato 26" d="M10.5,20.5l10-10" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.2" />
+                            <path id="Tracciato_27" data-name="Tracciato 27" d="M10.5,10.5h10v10" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="1.2" />
+                        </g>
+                    </svg>
                 </button>
             </div>
         </div>

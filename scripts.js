@@ -14,6 +14,29 @@ jQuery(document).ready(function() {
         }
     });
 });
+
+// Back to Top Button
+var btn = jQuery('#ScrollTopBtn');
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  jQuery('html, body').animate({scrollTop:0}, '300');
+});
+
+
+// Mobile Button CTA
+var scroll_offset = 300;
+
+jQuery(window).scroll(function () {
+    var selettore = jQuery(window);
+    if (jQuery('#infoBtn').length) {
+        if (selettore.scrollTop() > scroll_offset) {
+            jQuery('#infoBtn').addClass('btn-revealed');
+        } else {
+            jQuery('#infoBtn').removeClass('btn-revealed');
+        }
+    }
+});
 // Menu
 jQuery("#hamburgerButton").click(function () {
   jQuery("#hamburgerButton").toggleClass("is-active");

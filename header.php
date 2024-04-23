@@ -59,7 +59,7 @@
                 <div class="navigation__button__cta">
                     <?php
                     if (is_front_page()) {  ?>
-                        <a id="homeCta" href="#" class="button-white">
+                        <a id="homeCta" href="contatti" class="button-white">
                             <span class="text">Prenota una visita</span>
                             <span class="text-1">Prenota una visita</span>
                             <span class="text-2">Prenota una visita</span>
@@ -67,7 +67,7 @@
                         </a>
                     <?php
                     } else {  ?>
-                        <a href="#" class="button-green">
+                        <a href="contatti" class="button-green">
                             <span class="text">Prenota una visita</span>
                             <span class="text-1">Prenota una visita</span>
                             <span class="text-2">Prenota una visita</span>

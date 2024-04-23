@@ -188,7 +188,6 @@
         <h3 class="titolo-ped-home"><?php echo esc_html(get_field('titolo_sezione_blog_home')); ?></h3>
         <h2 class="subtitolo-post-home"><?php echo esc_html(get_field('sottotitolo_sezione_blog_home')); ?></h2>
     </div>
-
     <?php get_template_part("template-parts/post-block"); ?>
 
     <!-- Video Block -->
