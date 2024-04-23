@@ -8,7 +8,6 @@
 
   @media #{$lg} {
     width: fit-content;
-    
   }
 }
 
@@ -27,7 +26,11 @@
 }
 .swiper-pagination {
   position: unset;
-  margin: 0 40px;
+  margin: 0 25px;
+
+  @media #{$xl} {
+    margin: 0 40px;
+  }
 }
 .swiper-horizontal {
   .swiper-pagination-bullets,
@@ -37,9 +40,13 @@
   }
   .swiper-pagination-bullets {
     span {
-      width: 40px;
+      width: 35px;
       height: 6px;
       border-radius: 3px;
+
+      @media #{$xl} {
+        width: 40px;
+      }
     }
   }
   .swiper-pagination-bullet-active {
