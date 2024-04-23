@@ -77,10 +77,10 @@
 }
 .about-cover {
   margin-top: 40px;
-  padding: 5px;
+  padding: 0 5px;
   width: 100%;
   overflow: clip;
-
+  
   &__image {
     border-radius: 30px;
     max-width: 100%;
@@ -89,5 +89,6 @@
   }
   @media #{$lg} {
     margin-top: 150px;
+    max-height: 716px;
   }
 }

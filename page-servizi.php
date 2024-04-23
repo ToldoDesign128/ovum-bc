@@ -14,11 +14,11 @@ get_header();
             <div class="tradizionale__content__box">
                 <div class="tradizionale__content__box__text margin-0 wysiwyg"><?php the_field('testo_tradizionale_servizi'); ?></div>
                 <?php
-                if (have_rows('elenco_avanzata_servizi')) : ?>
+                if (have_rows('elenco_tradizionale_servizi')) : ?>
                     <ul class="tradizionale__content__box__list">
 
                         <?php
-                        while (have_rows('elenco_avanzata_servizi')) : the_row();
+                        while (have_rows('elenco_tradizionale_servizi')) : the_row();
 
                             // Load sub field value.
                             $testo_ul_1 = get_sub_field('testo_elenco'); ?>

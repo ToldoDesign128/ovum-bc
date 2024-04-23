@@ -131,6 +131,11 @@ footer {
           font-weight: 400;
           letter-spacing: -0.25px;
           line-height: 22px;
+
+          @media #{$lg} {
+            font-size: 20px;
+            line-height: 24px;                
+          }
         }
 
         a {
@@ -144,6 +149,8 @@ footer {
           transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 
           @media #{$lg} {
+            font-size: 18px;
+            line-height: 22px;    
             &:hover {
               opacity: 0.5;
             }
@@ -197,6 +204,11 @@ footer {
               line-height: 18px;
               position: relative;
               transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+              @media #{$lg} {
+                font-size: 18px;
+                line-height: 22px;                
+              }
             }
             @media #{$lg} {
               margin-top: 15px;
@@ -250,6 +262,7 @@ footer {
               a {
                 display: inline-block;
                 width: 100%;
+                font-size: 18px;
                 font-weight: 400;
                 position: relative;
                 transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -325,6 +338,11 @@ footer {
         font-size: 14px;
         line-height: 18px;
         letter-spacing: -0.21px;
+
+        @media #{$lg} {
+          font-size: 16px;
+          line-height: 20px;          
+        }
       }
       &__return {
         display: none;

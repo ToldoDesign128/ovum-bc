@@ -86,7 +86,9 @@
         </div>
         <!-- Menu Navigazione  -->
         <div id="menu">
-            <div class="menu-bg-1"></div>
+            <div class="menu-bg-1">
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/logo_benessere_chiropratico_w.svg';?>" alt="logo">
+            </div>
             <div class="menu-bg-2">
                 <!-- Main menu -->
                 <nav>

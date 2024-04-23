@@ -74,10 +74,10 @@
           line-height: 24px;
           position: relative;
           opacity: 1;
-          transition: all .4s cubic-bezier(.215, .61, .355, 1);
+          transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-          &::after{
-            content: '';
+          &::after {
+            content: "";
             height: 1px;
             width: 100%;
             position: absolute;
@@ -91,8 +91,8 @@
             line-height: 28px;
             letter-spacing: 0;
 
-            &:hover{
-                opacity: .7;
+            &:hover {
+              opacity: 0.7;
             }
           }
         }
@@ -154,16 +154,25 @@
       }
     }
     &__text {
-      max-width: 50%;
+      max-width: 100%;
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       letter-spacing: -0.25px;
 
       @media #{$lg} {
+        max-width: 50%;
         font-size: 18px;
         line-height: 28px;
         letter-spacing: 0;
+      }
+    }
+
+    &__gravity{
+      padding-top: 30px;
+
+      @media #{$lg} {
+        padding-top: 40px;
       }
     }
   }

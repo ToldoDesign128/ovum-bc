@@ -1,12 +1,12 @@
 <section class="faq container">
-    <h2 class="faq__title">Alcune domande e risposte che siamo soliti rispondere</h2>
+    <h2 class="faq__title">Dubbi, domande o perplessità sulla chiropratica? Qui troverai le risposte che cerchi.</h2>
     <ul class="faq__list">
         <?php /* Custom Loop */
 
         $custom_loop = new WP_Query(array(
             'post_type'     => 'faq',
             'posts_per_page' => 999,
-            'orderby'        => 'menu_order',
+            'orderby'        => 'date',
             'order'          => 'ASC',
         )); ?>
 

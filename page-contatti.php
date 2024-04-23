@@ -54,7 +54,7 @@ get_header();
         </div>
         <div class="hero-contatti__form">
             <h3 class="hero-contatti__form__title"><?php echo esc_html(get_field('titolo_form_contatti')); ?></h3>
-            <p class="hero-contatti__form__text"><?php echo wp_kses_post(get_field('testo_form_contatti')); ?></p>
+            <div class="hero-contatti__form__text"><?php the_field('testo_form_contatti'); ?></div>
 
             <div class="hero-contatti__form__gravity">
                <?php
