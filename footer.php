@@ -1,6 +1,6 @@
 <!-- CTA Mobile -->
 <div id="infoBtn" class="mobile-cta">
-    <a href="contatti" class="mobile-cta__button">
+    <a href="<?php echo home_url() . '/contatti';?>" class="mobile-cta__button">
         Prenota una visita
         <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024">
             <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(-10.076 -9.9)">
