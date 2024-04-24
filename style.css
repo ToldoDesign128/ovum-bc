@@ -320,6 +320,46 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
   fill: #6B850A !important;
 }
 
+.error {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error__title {
+  font-size: 50px;
+  line-height: 64px;
+  font-weight: 500;
+}
+@media (min-width : 1024px) {
+  .error__title {
+    font-size: 80px;
+    line-height: 96px;
+  }
+}
+.error__text {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+@media (min-width : 1024px) {
+  .error__text {
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.error a {
+  margin-top: 30px;
+}
+@media (min-width : 1024px) {
+  .error a {
+    margin-top: 50px;
+  }
+}
+
 .mission {
   padding: 0 20px;
   padding-top: 75px;
