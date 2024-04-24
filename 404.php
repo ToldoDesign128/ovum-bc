@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php get_header(); 
+if (!defined('ABSPATH')) {
+    exit;
+}?>
 <main class="error">
     <h1 class="error__title">Pagina non trovata</h1>
     <p class="error__text">Errore 404</p>

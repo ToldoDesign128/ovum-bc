@@ -1,0 +1,62 @@
+// Cookie
+.cookie {
+  &__title {
+    padding-top: 100px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.42px;
+
+    @media #{$lg} {
+      padding-top: 200px;
+      font-size: 52px;
+      line-height: 60px;
+      letter-spacing: -0.78px;
+    }
+  }
+
+  &__content {
+    h2 {
+      margin-top: 40px;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: -0.51px;
+
+      @media #{$xl} {
+        margin-top: 70px;
+        font-size: 38px;
+        line-height: 46px;
+        letter-spacing: -0.57px;
+      }
+    }
+    h3 {
+      margin-top: 30px;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: -0.51px;
+
+      @media #{$xl} {
+        margin-top: 60px;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.57px;
+      }
+    }
+    p {
+      margin-top: 30px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.21px;
+
+      @media #{$lg} {
+        margin-top: 60px;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.25px;
+      }
+    }
+  }
+}

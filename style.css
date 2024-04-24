@@ -895,6 +895,67 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
   }
 }
 
+.cookie__title {
+  padding-top: 100px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.42px;
+}
+@media (min-width : 1024px) {
+  .cookie__title {
+    padding-top: 200px;
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: -0.78px;
+  }
+}
+.cookie__content h2 {
+  margin-top: 40px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.51px;
+}
+@media (min-width : 1280px) {
+  .cookie__content h2 {
+    margin-top: 70px;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: -0.57px;
+  }
+}
+.cookie__content h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.51px;
+}
+@media (min-width : 1280px) {
+  .cookie__content h3 {
+    margin-top: 60px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.57px;
+  }
+}
+.cookie__content p {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.21px;
+}
+@media (min-width : 1024px) {
+  .cookie__content p {
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.25px;
+  }
+}
+
 .about-home {
   padding: 0 20px;
   padding-top: 75px;
