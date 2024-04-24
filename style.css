@@ -2161,20 +2161,22 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
   height: 100%;
   transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.button-white:hover .text-1,
-.button-gray:hover .text-1,
-.button-green:hover .text-1 {
-  top: -50px;
-}
-.button-white:hover .text-2,
-.button-gray:hover .text-2,
-.button-green:hover .text-2 {
-  top: 15px;
-}
-.button-white:hover .shape,
-.button-gray:hover .shape,
-.button-green:hover .shape {
-  left: 0;
+@media (min-width : 1024px) {
+  .button-white:hover .text-1,
+  .button-gray:hover .text-1,
+  .button-green:hover .text-1 {
+    top: -50px;
+  }
+  .button-white:hover .text-2,
+  .button-gray:hover .text-2,
+  .button-green:hover .text-2 {
+    top: 15px;
+  }
+  .button-white:hover .shape,
+  .button-gray:hover .shape,
+  .button-green:hover .shape {
+    left: 0;
+  }
 }
 
 .button-white {

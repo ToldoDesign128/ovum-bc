@@ -40,15 +40,19 @@
     height: 100%;
     transition: all .6s cubic-bezier(.215, .61, .355, 1);
   }
-  &:hover {
-    .text-1 {
-      top: -50px;
-    }
-    .text-2 {
-      top: 15px;
-    }
-    .shape {
-      left: 0;
+
+  @media #{$lg} {
+    
+    &:hover {
+      .text-1 {
+        top: -50px;
+      }
+      .text-2 {
+        top: 15px;
+      }
+      .shape {
+        left: 0;
+      }
     }
   }
 }
