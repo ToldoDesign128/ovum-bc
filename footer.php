@@ -286,6 +286,35 @@
                 <?php endif; ?>
                 <!-- Cookie Banner -->
                 <button class="cmplz-manage-consent">Consenso cookie</button>
+
+                <!-- Google policy -->
+                <?php
+                $privacy_google = get_field('privacy_recaptcha_footer_copia', 'option');
+                if (!empty($privacy_google)) :
+                    $privacy_google_url = $privacy_google['url'];
+                    $privacy_google_title = $privacy_google['title'];
+                    $privacy_google_target = $privacy_google['target'] ? $privacy_google['target'] : '_self';;
+                ?>
+                    <div class="ml-2">
+                        <a class="punto" href="<?php echo esc_url($privacy_google_url); ?>" target="<?php echo esc_attr($privacy_google_target); ?>">
+                            <?php echo esc_html($privacy_google_title); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <!-- Google policy -->
+                <?php
+                $termini_google = get_field('termini_recaptcha_footer_copia', 'option');
+                if (!empty($termini_google)) :
+                    $termini_google_url = $termini_google['url'];
+                    $termini_google_title = $termini_google['title'];
+                    $termini_google_target = $termini_google['target'] ? $termini_google['target'] : '_self';;
+                ?>
+                    <div class="ml-1">
+                        <a class="punto" href="<?php echo esc_url($termini_google_url); ?>" target="<?php echo esc_attr($termini_google_target); ?>">
+                            <?php echo esc_html($termini_google_title); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

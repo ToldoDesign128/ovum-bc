@@ -77,7 +77,7 @@ add_action('after_setup_theme', 'ovum_bc_custom_logo_setup');
 // Change footer in admin panel
 function remove_footer_admin()
 {
-	echo '<p>Website by Ovum Design</p>';
+	echo '<p>Website by ExVoid & Ovum Design</p>';
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 
@@ -151,20 +151,6 @@ if (function_exists('acf_add_options_page')) {
 		'redirect'      => true
 	));
 }
-
-// Add style and script
-
-function theme_gsap_script(){
-    // The core GSAP library
-    wp_enqueue_script( 'gsap-js', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), false, true );
-    // ScrollTrigger - with gsap.js passed as a dependency
-    wp_enqueue_script( 'gsap-st', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array('gsap-js'), false, true );
-    // Your animation code file - with gsap.js passed as a dependency
-    wp_enqueue_script( 'gsap-js2', get_template_directory_uri() . '/assets/js/gsap-animation.js', array('gsap-js'), false, true );
-}
-
-add_action( 'wp_enqueue_scripts', 'theme_gsap_script' );
-
 function add_theme_scripts()
 {
 	wp_enqueue_style('swiper-style', "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
@@ -179,6 +165,19 @@ function add_theme_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
+
+// Add style and script
+
+function theme_gsap_script(){
+    // The core GSAP library
+    wp_enqueue_script( 'gsap-js', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', false );
+    // ScrollTrigger - with gsap.js passed as a dependency
+    wp_enqueue_script( 'gsap-st', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', false, true );
+    // Your animation code file - with gsap.js passed as a dependency
+    wp_enqueue_script( 'gsap-js-script', get_template_directory_uri() . '/assets/js/gsap-animation.js', false, true );
+}
+
+add_action( 'wp_enqueue_scripts', 'theme_gsap_script' );
 
 //CPT
 require dirname(__FILE__) . '/function-parts/cpt-prima-e-dopo.php';
