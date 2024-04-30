@@ -32,7 +32,7 @@
                     $iframe = str_replace($src, $new_src, $iframe);
 
                     // Add extra attributes to iframe HTML.
-                    $attributes = 'frameborder="0"';
+                    $attributes = 'frameborder="0" id="youtube-video"';
                     $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 
                     // Display customized HTML.

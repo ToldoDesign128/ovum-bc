@@ -15,11 +15,63 @@ Text Domain: ovum-bc
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -34,7 +86,11 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
           text-size-adjust: none;
 }
 
-footer, header, nav, section, main {
+footer,
+header,
+nav,
+section,
+main {
   display: block;
 }
 
@@ -47,15 +103,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -68,6 +129,10 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 .scroll-smooth {
@@ -304,20 +369,6 @@ strong {
 
 .swiper-button-disabled {
   opacity: 1;
-}
-
-iframe .ytp-large-play-button {
-  background-color: #6B850A !important;
-  overflow: clip !important;
-  border-radius: 100% !important;
-}
-iframe .ytp-large-play-button svg .ytp-large-play-button-bg {
-  fill: #6B850A !important;
-}
-iframe .ytp-large-play-button:hover svg .ytp-large-play-button-bg,
-iframe .ytp-large-play-button :active svg .ytp-large-play-button-bg,
-iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
-  fill: #6B850A !important;
 }
 
 .error {
@@ -1150,6 +1201,12 @@ iframe .ytp-large-play-button :target svg .ytp-large-play-button-bg {
   position: absolute;
   left: 20px;
   bottom: 20px;
+}
+@media (min-width : 1024px) {
+  .about-home__image__box {
+    left: 60px;
+    bottom: 60px;
+  }
 }
 .about-home__image__box p {
   color: #fff;
@@ -2539,6 +2596,19 @@ header .navigation__categoria__wrap__list li a:hover::before {
   opacity: 1;
   left: -10px;
 }
+header .navigation__categoria__wrap__list li.current-menu-item a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  display: block;
+  height: 5px;
+  width: 5px;
+  background: #6B850A;
+  border-radius: 100%;
+  opacity: 1;
+}
 @media (min-width : 1280px) {
   header .navigation__categoria {
     display: flex;
@@ -3081,8 +3151,8 @@ footer .footer__col__2__subcol p {
 }
 @media (min-width : 1024px) {
   footer .footer__col__2__subcol p {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 footer .footer__col__2__subcol a {
@@ -3104,10 +3174,10 @@ footer .footer__col__2__subcol a {
     opacity: 0.5;
   }
 }
-footer .footer__col__2__subcol__email__link, footer .footer__col__2__subcol__telefono__link, footer .footer__col__2__subcol__indirizzo__link {
+footer .footer__col__2__subcol__email__link, footer .footer__col__2__subcol__telefono__link, footer .footer__col__2__subcol__indirizzo__link, footer .footer__col__2__subcol__piva__link {
   position: relative;
 }
-footer .footer__col__2__subcol__email__link::after, footer .footer__col__2__subcol__telefono__link::after, footer .footer__col__2__subcol__indirizzo__link::after {
+footer .footer__col__2__subcol__email__link::after, footer .footer__col__2__subcol__telefono__link::after, footer .footer__col__2__subcol__indirizzo__link::after, footer .footer__col__2__subcol__piva__link::after {
   content: "";
   height: 1px;
   width: 100%;
@@ -3115,6 +3185,13 @@ footer .footer__col__2__subcol__email__link::after, footer .footer__col__2__subc
   left: 0;
   bottom: 0;
   background-color: #6B850A;
+}
+footer .footer__col__2__subcol__email__text, footer .footer__col__2__subcol__telefono__text, footer .footer__col__2__subcol__indirizzo__text, footer .footer__col__2__subcol__piva__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.21px;
+  line-height: 18px;
 }
 footer .footer__col__2__subcol__telefono-title {
   margin-top: 15px;
@@ -3125,6 +3202,9 @@ footer .footer__col__2__subcol__telefono-title {
   }
 }
 footer .footer__col__2__subcol__indirizzo-title {
+  margin-top: 15px;
+}
+footer .footer__col__2__subcol__piva-title {
   margin-top: 15px;
 }
 footer .footer__col__2__subcol__email-title {
@@ -3316,6 +3396,13 @@ footer .footer-credits .footer-credits-box .credits {
   line-height: 18px;
   letter-spacing: -0.21px;
 }
+@media (min-width : 1024px) {
+  footer .footer-credits .footer-credits-box .credits {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+  }
+}
 footer .footer-credits .footer-credits-box .credits a {
   color: white;
   font-weight: 600;
@@ -3368,6 +3455,11 @@ footer .footer-credits .footer-credits-box .privacy a {
   position: relative;
 }
 @media (min-width : 1024px) {
+  footer .footer-credits .footer-credits-box .privacy a {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+  }
   footer .footer-credits .footer-credits-box .privacy a::after {
     content: "";
     z-index: 30;
@@ -4636,6 +4728,7 @@ form .gform_footer #gform_submit_button_1 {
   }
 }
 .hero-home__content__text__subtitle {
+  max-width: 11ch;
   color: #fff;
   margin-top: 10px;
   font-size: 52px;

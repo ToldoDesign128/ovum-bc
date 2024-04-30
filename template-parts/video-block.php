@@ -33,7 +33,7 @@
 
                         // Add extra attributes to iframe HTML.
                         $attributes = 'frameborder="0"';
-                        $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+                        $iframe = str_replace('></iframe>', ' ' . $attributes . ' ></iframe>', $iframe);
 
                         // Display customized HTML.
                         echo $iframe;

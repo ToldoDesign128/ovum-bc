@@ -183,6 +183,11 @@
       left: 20px;
       bottom: 20px;
 
+      @media #{$lg} {
+        left: 60px;
+        bottom: 60px;
+      }
+
       p {
         color: $white;
         font-size: 28px;
@@ -400,7 +405,7 @@
     padding-top: 150px;
   }
 }
-.subtitolo-post-home{
+.subtitolo-post-home {
   padding: 0 20px;
   padding-top: 10px;
   font-size: 34px;

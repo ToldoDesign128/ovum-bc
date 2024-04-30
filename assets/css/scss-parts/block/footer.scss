@@ -133,8 +133,8 @@ footer {
           line-height: 22px;
 
           @media #{$lg} {
-            font-size: 20px;
-            line-height: 24px;                
+            font-size: 18px;
+            line-height: 22px;
           }
         }
 
@@ -150,7 +150,7 @@ footer {
 
           @media #{$lg} {
             font-size: 18px;
-            line-height: 22px;    
+            line-height: 22px;
             &:hover {
               opacity: 0.5;
             }
@@ -159,7 +159,8 @@ footer {
 
         &__email,
         &__telefono,
-        &__indirizzo {
+        &__indirizzo,
+        &__piva {
           &__link {
             position: relative;
 
@@ -173,6 +174,13 @@ footer {
               background-color: $green;
             }
           }
+          &__text {
+            color: $white;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: -0.21px;
+            line-height: 18px;
+          }
         }
 
         &__telefono-title {
@@ -183,6 +191,9 @@ footer {
           }
         }
         &__indirizzo-title {
+          margin-top: 15px;
+        }
+        &__piva-title {
           margin-top: 15px;
         }
         &__email-title {
@@ -207,7 +218,7 @@ footer {
 
               @media #{$lg} {
                 font-size: 18px;
-                line-height: 22px;                
+                line-height: 22px;
               }
             }
             @media #{$lg} {
@@ -341,7 +352,7 @@ footer {
 
         @media #{$lg} {
           font-size: 16px;
-          line-height: 20px;          
+          line-height: 20px;
         }
       }
       &__return {
@@ -389,6 +400,12 @@ footer {
         line-height: 18px;
         letter-spacing: -0.21px;
 
+        @media #{$lg} {
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: -0.25px;
+        }
+
         a {
           color: white;
           font-weight: 600;
@@ -429,7 +446,7 @@ footer {
         justify-content: flex-start;
 
         @media #{$lg} {
-          justify-content: flex-end;          
+          justify-content: flex-end;
         }
 
         a {
@@ -443,6 +460,9 @@ footer {
           position: relative;
 
           @media #{$lg} {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.25px;
             &::after {
               content: "";
               z-index: 30;
@@ -571,7 +591,7 @@ footer {
   }
 
   @media #{$lg} {
-    display: none;    
+    display: none;
   }
 }
 

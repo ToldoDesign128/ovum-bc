@@ -77,6 +77,24 @@ header {
                 }
               }
             }
+
+            &.current-menu-item{
+              a {  
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  left: -10px;
+                  transform: translateY(-50%);
+                  display: block;
+                  height: 5px;
+                  width: 5px;
+                  background: $green;
+                  border-radius: 100%;
+                  opacity: 1;
+                }
+              }
+            }
           }
         }
       }
