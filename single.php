@@ -252,14 +252,14 @@
 
                         <!-- Blocco H2 -->
                         <li>
-                            <a href="#<?php echo str_replace(' ', '_', esc_html($h2)); ?>" class=""><?php echo esc_html(substr($h2, 0, 20)) . '...'; ?></a>
+                            <a href="#<?php echo str_replace(' ', '_', esc_html($h2)); ?>" class="<?php echo esc_html(substr($h2, 0, 20)) . '...'; ?>"><?php echo esc_html(substr($h2, 0, 20)) . '...'; ?></a>
                         </li>
                     <?php
                     elseif (get_row_layout() == 'titolo_h3') :
                         $h3 = get_sub_field('titolo_h3'); ?>
                         <!-- Blocco H3 -->
                         <li>
-                            <a href="#<?php echo str_replace(' ', '_', esc_html($h3)); ?>" class=""><?php echo esc_html(substr($h3, 0, 20)) . '...'; ?></a>
+                            <a href="#<?php echo str_replace(' ', '_', esc_html($h3)); ?>" class="<?php echo esc_html(substr($h3, 0, 20)) . '...'; ?>"><?php echo esc_html(substr($h3, 0, 20)) . '...'; ?></a>
                         </li>
 
                     <?php
@@ -267,7 +267,7 @@
                         $h4 = get_sub_field('titolo_h4'); ?>
                         <!-- Blocco H4 -->
                         <li>
-                            <a href="#<?php echo str_replace(' ', '_', esc_html($h4)); ?>" class=""><?php echo esc_html(substr($h4, 0, 20)) . '...'; ?></a>
+                            <a href="#<?php echo str_replace(' ', '_', esc_html($h4)); ?>" class="<?php echo esc_html(substr($h4, 0, 20)) . '...'; ?>"><?php echo esc_html(substr($h4, 0, 20)) . '...'; ?></a>
                         </li>
             <?php
                     endif;
