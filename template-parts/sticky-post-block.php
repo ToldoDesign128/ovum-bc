@@ -3,13 +3,10 @@
     <div class="stikyloop__slider swiperStickyPost">
         <ul class="swiper-wrapper">
             <?php
-            $sticky = get_option('sticky_posts');
             if (is_front_page()) {
                 $custom_loop = new WP_Query(array(
                     'post_type' => 'post',
-                    'post__in' => $sticky,
                     'category_name'  => 'chiropratica',
-                    'ignore_sticky_posts' => 1,
                     'posts_per_page' => 5,
                     'orderby'        => 'menu_order',
                     'order'          => 'ASC'
@@ -17,8 +14,6 @@
             } else {
                 $custom_loop = new WP_Query(array(
                     'post_type' => 'post',
-                    'post__in' => $sticky,
-                    'ignore_sticky_posts' => 1,
                     'posts_per_page' => 5,
                     'orderby'        => 'menu_order',
                     'order'          => 'ASC'

@@ -3,7 +3,7 @@
     <section class="articolo__hero">
         <h2 class="articolo__hero__cat"><?php $cat = get_the_category();
                                         echo $cat[0]->cat_name; ?></h2>
-        <h1 class="articolo__hero__title"><?php the_title(); ?></h1>
+        <h1 id="titolo-articolo" class="articolo__hero__title"><?php the_title(); ?></h1>
         <h5 class="articolo__hero__estratto"><?php echo esc_html(get_field('estratto')); ?></h5>
         <p class="articolo__hero__data"><?php echo get_the_date('d F Y'); ?></p>
         <?php
@@ -66,7 +66,7 @@
 
                     <!-- Blocco H2 -->
 
-                    <h2 id="<?php echo str_replace(' ', '_', esc_html($h2)); ?>" class="articolo__content__h2"><?php echo esc_html($h2); ?></h2>
+                    <h2 id="<?php echo esc_html($h2); ?>" class="articolo__content__h2"><?php echo esc_html($h2); ?></h2>
 
                     <!-- Blocco H3 -->
 
@@ -74,7 +74,7 @@
                 elseif (get_row_layout() == 'titolo_h3') :
                     $h3 = get_sub_field('titolo_h3'); ?>
 
-                    <h3 id="<?php echo str_replace(' ', '_', esc_html($h3)); ?>" class="articolo__content__h3"><?php echo esc_html($h3); ?></h3>
+                    <h3 id="<?php echo esc_html($h3); ?>" class="articolo__content__h3"><?php echo esc_html($h3); ?></h3>
 
                     <!-- Blocco H4 -->
 
@@ -82,7 +82,7 @@
                 elseif (get_row_layout() == 'titolo_h4') :
                     $h4 = get_sub_field('titolo_h4'); ?>
 
-                    <h4 id="<?php echo str_replace(' ', '_', esc_html($h4)); ?>" class="articolo__content__h4"><?php echo esc_html($h4); ?></h4>
+                    <h4 id="<?php echo esc_html($h4); ?>" class="articolo__content__h4"><?php echo esc_html($h4); ?></h4>
 
                     <!-- Blocco Paragrafo -->
 
@@ -242,6 +242,9 @@
     </section>
     <aside class="articolo__sideboard">
         <ol>
+            <li class="">
+                <a href="#titolo-articolo"><?php the_title();?></a>
+            </li>
             <?php
             if (have_rows('contenuto_articolo')) :
                 // Loop through rows.
@@ -252,14 +255,14 @@
 
                         <!-- Blocco H2 -->
                         <li>
-                            <a href="#<?php echo str_replace(' ', '_', esc_html($h2)); ?>" class="<?php echo esc_html(substr($h2, 0, 20)) . '...'; ?>"><?php echo esc_html(substr($h2, 0, 20)) . '...'; ?></a>
+                            <a href="#<?php echo esc_html($h2); ?>" class=""><?php echo esc_html($h2); ?></a>
                         </li>
                     <?php
                     elseif (get_row_layout() == 'titolo_h3') :
                         $h3 = get_sub_field('titolo_h3'); ?>
                         <!-- Blocco H3 -->
                         <li>
-                            <a href="#<?php echo str_replace(' ', '_', esc_html($h3)); ?>" class="<?php echo esc_html(substr($h3, 0, 20)) . '...'; ?>"><?php echo esc_html(substr($h3, 0, 20)) . '...'; ?></a>
+                            <a href="#<?php echo esc_html($h3); ?>" class=""><?php echo esc_html($h3); ?></a>
                         </li>
 
                     <?php
@@ -267,7 +270,7 @@
                         $h4 = get_sub_field('titolo_h4'); ?>
                         <!-- Blocco H4 -->
                         <li>
-                            <a href="#<?php echo str_replace(' ', '_', esc_html($h4)); ?>" class="<?php echo esc_html(substr($h4, 0, 20)) . '...'; ?>"><?php echo esc_html(substr($h4, 0, 20)) . '...'; ?></a>
+                            <a href="#<?php echo  esc_html($h4); ?>" class=""><?php echo esc_html($h4); ?></a>
                         </li>
             <?php
                     endif;

@@ -188,16 +188,33 @@ footer {
 
           @media #{$lg} {
             margin-top: 25px;
+            font-size: 18px;
+            line-height: 22px;
           }
         }
         &__indirizzo-title {
           margin-top: 15px;
+          @media #{$lg} {
+            font-size: 18px;
+            line-height: 22px;
+            
+          }
         }
         &__piva-title {
           margin-top: 15px;
+          @media #{$lg} {
+            font-size: 18px;
+            line-height: 22px;
+            
+          }
         }
         &__email-title {
           margin-top: 15px;
+          @media #{$lg} {
+            font-size: 18px;
+            line-height: 22px;
+            
+          }
         }
 
         &__social {
@@ -596,5 +613,5 @@ footer {
 }
 
 .btn-revealed {
-  bottom: 40px;
+  bottom: 45px;
 }
