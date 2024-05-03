@@ -59,19 +59,19 @@
                 <div class="navigation__button__cta">
                     <?php
                     if (is_front_page()) {  ?>
-                        <a id="homeCta" href="<?php echo home_url() . '/contatti';?>" class="button-white">
-                            <span class="text">Prenota una visita</span>
-                            <span class="text-1">Prenota una visita</span>
-                            <span class="text-2">Prenota una visita</span>
-                            <span class="shape"></span>
+                        <a id="homeCta" href="<?php echo home_url() . '/contatti'; ?>" class="button-white">
+                            <span>
+                                <span>Prenota una visita</span>
+                                <span>Prenota una visita</span>
+                            </span>
                         </a>
                     <?php
                     } else {  ?>
-                        <a href="<?php echo home_url() . '/contatti';?>" class="button-green">
-                            <span class="text">Prenota una visita</span>
-                            <span class="text-1">Prenota una visita</span>
-                            <span class="text-2">Prenota una visita</span>
-                            <span class="shape"></span>
+                        <a href="<?php echo home_url() . '/contatti'; ?>" class="button-green">
+                            <span>
+                                <span>Prenota una visita</span>
+                                <span>Prenota una visita</span>
+                            </span>
                         </a>
                     <?php };
                     ?>
@@ -87,7 +87,7 @@
         <!-- Menu Navigazione  -->
         <div id="menu">
             <div class="menu-bg-1">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/logo_benessere_chiropratico_w.svg';?>" alt="logo">
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/logo_benessere_chiropratico_w.svg'; ?>" alt="logo">
             </div>
             <div class="menu-bg-2">
                 <!-- Main menu -->
