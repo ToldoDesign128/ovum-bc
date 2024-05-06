@@ -22,17 +22,19 @@
 
           &__image {
             position: relative;
-            img,
-            iframe {
-              width: 100%;
-              min-height: 200px;
-              max-height: 200px;
-              object-fit: cover;
-              border-radius: 30px;
-
-              @media #{$xl} {
-                min-height: 260px;
-                max-height: 260px;
+            a{
+              img,
+              iframe {
+                width: 100%;
+                min-height: 200px;
+                max-height: 200px;
+                object-fit: cover;
+                border-radius: 30px;
+  
+                @media #{$xl} {
+                  min-height: 260px;
+                  max-height: 260px;
+                }
               }
             }
 
@@ -61,9 +63,30 @@
               right: 15px;
               padding: 15px 19px;
             }
+
+            @media #{$xl} {
+              &:hover{
+                .button-gray{
+                  span {
+                    span {
+                      transform: translateY(-100%);
+                    }
+                  }
+                  &:before {
+                    transform: translateX(0);
+                  }
+                }
+              }
+            }
+            
           }
 
           &__title {
+            display: block;
+            color: $black;
+            text-decoration: none;
+            opacity: 1;
+            transition: all 1s cubic-bezier(.215, .61, .355, 1);
             margin-top: 25px;
             font-size: 24px;
             line-height: 30px;
@@ -73,6 +96,10 @@
               margin-top: 40px;
               font-size: 24px;
               line-height: 30px;
+
+              &:hover{
+                opacity: .5;
+              }
             }
           }
           &__extract {

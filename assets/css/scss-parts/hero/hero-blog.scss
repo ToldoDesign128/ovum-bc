@@ -79,7 +79,7 @@
       }
 
       &__button {
-        padding: 15px 18px;
+        padding: 15px 19px;
         position: absolute;
         bottom: 15px;
         right: 15px;
@@ -87,13 +87,6 @@
         @media #{$lg} {
           bottom: 20px;
           right: 20px;
-        }
-
-        .text,
-        .text-1,
-        .text-2 {
-          left: 50%;
-          transform: translateX(-50%);
         }
       }
 
@@ -104,6 +97,21 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+
+      @media #{$xl} {
+        &:hover {
+          .button-gray {
+            span {
+              span {
+                transform: translateY(-100%);
+              }
+            }
+            &:before {
+              transform: translateX(0);
+            }
+          }
+        }
       }
     }
   }

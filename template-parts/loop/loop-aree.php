@@ -14,43 +14,45 @@
                 <li class="loop-blog__grid__item">
                     <article class="post-content">
                         <div class="post-content__image">
-                            <?php
-                            $post_sellector = get_field('selettore_immagine');
-                            $post_image = get_field('immagine_copertina');
-
-                            if ($post_sellector == 'Immagine') { ?>
-                                <img src="<?php echo esc_url($post_image['url']); ?>" />
-                            <?php
-                            } else {
-                            ?>
-                                <!-- Video -->
+                            <a href="<?php the_permalink(); ?>">
                                 <?php
-                                // Load value.
-                                $iframe = get_field('video_copertina');
+                                $post_sellector = get_field('selettore_immagine');
+                                $post_image = get_field('immagine_copertina');
 
-                                // Use preg_match to find iframe src.
-                                preg_match('/src="(.+?)"/', $iframe, $matches);
-                                $src = $matches[1];
-
-                                // Add extra parameters to src and replace HTML.
-                                $params = array(
-                                    'controls'  => 0,
-                                    'hd'        => 1,
-                                    'autohide'  => 1
-                                );
-                                $new_src = add_query_arg($params, $src);
-                                $iframe = str_replace($src, $new_src, $iframe);
-
-                                // Add extra attributes to iframe HTML.
-                                $attributes = 'frameborder="0"';
-                                $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
-
-                                // Display customized HTML.
-                                echo $iframe;
+                                if ($post_sellector == 'Immagine') { ?>
+                                    <img src="<?php echo esc_url($post_image['url']); ?>" />
+                                <?php
+                                } else {
                                 ?>
-                            <?php
-                            };
-                            ?>
+                                    <!-- Video -->
+                                    <?php
+                                    // Load value.
+                                    $iframe = get_field('video_copertina');
+
+                                    // Use preg_match to find iframe src.
+                                    preg_match('/src="(.+?)"/', $iframe, $matches);
+                                    $src = $matches[1];
+
+                                    // Add extra parameters to src and replace HTML.
+                                    $params = array(
+                                        'controls'  => 0,
+                                        'hd'        => 1,
+                                        'autohide'  => 1
+                                    );
+                                    $new_src = add_query_arg($params, $src);
+                                    $iframe = str_replace($src, $new_src, $iframe);
+
+                                    // Add extra attributes to iframe HTML.
+                                    $attributes = 'frameborder="0"';
+                                    $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+                                    // Display customized HTML.
+                                    echo $iframe;
+                                    ?>
+                                <?php
+                                };
+                                ?>
+                            </a>
                             <!-- Post category -->
                             <p class="post-content__image__cat"><?php $cat = get_the_category();
                                                                 echo $cat[0]->cat_name; ?></p>
@@ -76,7 +78,7 @@
                                 </span>
                             </a>
                         </div>
-                        <p class="post-content__title"><?php the_title(); ?></p>
+                        <a href="<?php the_permalink(); ?>" class="post-content__title"><?php the_title(); ?></a>
                         <p class="post-content__extract"><?php echo esc_html(get_field('estratto')); ?></p>
                         <p class="post-content__date"><?php echo get_the_date('d F Y'); ?></p>
                     </article>

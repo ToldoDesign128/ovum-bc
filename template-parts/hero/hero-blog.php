@@ -20,11 +20,17 @@
                     <div class="hero-blog__category__item swiper-slide">
 
                         <?php if ($category->name == 'Aree di intervento') { ?>
-                            <img class="hero-blog__category__item__image" src="<?php echo get_template_directory_uri() . '/assets/img/category/categoria_aree.jpg'; ?>" alt="">
+                            <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
+                                <img class="hero-blog__category__item__image" src="<?php echo get_template_directory_uri() . '/assets/img/category/categoria_aree.jpg'; ?>" alt="">
+                            </a>                            
                         <?php } elseif ($category->name == 'Chiropratica') { ?>
-                            <img class="hero-blog__category__item__image" src="<?php echo get_template_directory_uri() . '/assets/img/category/categoria_chiropratica.jpg'; ?>" alt="">
+                            <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
+                                <img class="hero-blog__category__item__image" src="<?php echo get_template_directory_uri() . '/assets/img/category/categoria_chiropratica.jpg'; ?>" alt="">
+                            </a>                            
                         <?php } else { ?>
-                            <img class="hero-blog__category__item__image" src="<?php echo get_template_directory_uri() . '/assets/img/category/categoria_eventi.jpg'; ?>" alt="">
+                            <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
+                                <img class="hero-blog__category__item__image" src="<?php echo get_template_directory_uri() . '/assets/img/category/categoria_eventi.jpg'; ?>" alt="">
+                            </a>                            
                         <?php } ?>
 
                         <h2 class="hero-blog__category__item__title"><?php echo esc_html($category->name); ?></h2>
