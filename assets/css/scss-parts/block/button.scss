@@ -1,57 +1,63 @@
 .button-white,
 .button-gray,
 .button-green {
-  display: inline-block;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 30px 14px 30px;
   border-radius: 200px;
   position: relative;
   overflow: clip;
+  transition: 0.2s ease-in-out;
 
-  .text, .text-1, .text-2{
+  span {
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: -.25px;
+    letter-spacing: -0.25px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    max-height: 20px;
+
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-height: 20px;
+      position: relative;
+      z-index: 2;
+      transition: 0.3s ease-in-out;
+      transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
   }
 
-  .text {
-    opacity: 0;
-  }
-  .text-1 {
-    position: absolute;
-    left: 30px;
-    top: 15px;
-    transition: all .6s cubic-bezier(.215, .61, .355, 1);
-  }
-  .text-2 {
-    position: absolute;
-    left: 30px;
-    top: 100px;
-    transition: all .6s cubic-bezier(.215, .61, .355, 1);
-    z-index: 10;
-  }
-  .shape {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    border-radius: 200px;
+  &:before {
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
-    transition: all .6s cubic-bezier(.215, .61, .355, 1);
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: translateX(-105%);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left center;
   }
 
   @media #{$lg} {
-    
     &:hover {
-      .text-1 {
-        top: -50px;
+      span {
+        span {
+          transform: translateY(-100%);
+        }
       }
-      .text-2 {
-        top: 15px;
-      }
-      .shape {
-        left: 0;
+      &:before {
+        transform: translateX(0);
       }
     }
   }
@@ -61,41 +67,50 @@
   color: $black;
   background: $white;
 
-  .text-1 {
-    color: $black;
+  @media #{$lg} {
+    &:hover {
+      span {
+        span{
+          color: $white;
+        }
+      }
+    }
   }
-  .text-2 {
-    color: $white;
-  }
-  .shape {
-    background: $green;
-  }
+  &:before{
+      background: $green;     
+    } 
 }
 .button-gray {
   color: $black;
   background: $light-gray;
 
-  .text-1 {
-    color: $black;
+  @media #{$lg} {
+    &:hover {
+      span {
+        span{
+          color: $white;
+        }
+      }
+    }
   }
-  .text-2 {
-    color: $white;
-  }
-  .shape {
-    background: $green;
-  }
+  &:before{
+      background: $green;    
+    } 
 }
 .button-green {
   color: $white;
   background: $green;
 
-  .text-1 {
-    color: $white;
+  @media #{$lg} {
+    &:hover {
+      span {
+        span{
+          color: $white;
+        }
+      }
+    }
   }
-  .text-2 {
-    color: $white;
-  }
-  .shape {
-    background: $black;
-  }
+  &:before{
+      background: $black;    
+    } 
 }
