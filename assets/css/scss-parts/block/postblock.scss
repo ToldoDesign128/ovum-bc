@@ -59,14 +59,21 @@
 
             &__button {
               position: absolute;
-              bottom: 15px;
-              right: 15px;
+              bottom: 6px;
+              right: 6px;
               padding: 15px 19px;
+              transform: scale(65%);
+
+              @media #{$xl} {
+                transform: scale(100%);
+                bottom: 15px;
+                right: 15px;
+              }
             }
 
             @media #{$xl} {
               &:hover{
-                .button-gray{
+                .button-white{
                   span {
                     span {
                       transform: translateY(-100%);

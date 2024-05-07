@@ -137,6 +137,12 @@ footer {
             line-height: 22px;
           }
         }
+        &__title {
+          @media #{$lg} {
+            font-size: 20px !important;
+            line-height: 24px !important;
+          }
+        }
 
         a {
           color: $white;
@@ -197,7 +203,6 @@ footer {
           @media #{$lg} {
             font-size: 18px;
             line-height: 22px;
-            
           }
         }
         &__piva-title {
@@ -205,7 +210,6 @@ footer {
           @media #{$lg} {
             font-size: 18px;
             line-height: 22px;
-            
           }
         }
         &__email-title {
@@ -213,7 +217,6 @@ footer {
           @media #{$lg} {
             font-size: 18px;
             line-height: 22px;
-            
           }
         }
 

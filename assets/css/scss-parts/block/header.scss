@@ -231,6 +231,7 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
       transform: translateY(100%);
       transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 
@@ -238,6 +239,20 @@ header {
         width: 80%;
         padding: 100px;
         flex-direction: row;
+      }
+
+      .header-logo-mobile{
+        display: block;
+        position: absolute;
+        top: 21px;
+        left: 21px;
+        width: auto;
+        height: 48px;
+        object-fit: contain;
+
+        @media #{$xl} {
+          display: none;          
+        }
       }
 
       nav {

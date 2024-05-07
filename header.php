@@ -90,6 +90,8 @@
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/logo_benessere_chiropratico_w.svg'; ?>" alt="logo">
             </div>
             <div class="menu-bg-2">
+
+                <img class="header-logo-mobile" src="<?php echo get_template_directory_uri() . '/assets/img/logo_benessere_chiropratico_w.svg'; ?>" alt="logo">
                 <!-- Main menu -->
                 <nav>
                     <?php

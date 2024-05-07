@@ -57,7 +57,7 @@
                             <p class="post-content__image__cat"><?php $cat = get_the_category();
                                                                 echo $cat[0]->cat_name; ?></p>
                             <!-- Stiky Post CTA -->
-                            <a href="<?php the_permalink(); ?>" class="post-content__image__button button-gray mt-3">
+                            <a href="<?php the_permalink(); ?>" class="post-content__image__button button-white mt-3">
                                 <span>
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024">
