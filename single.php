@@ -242,8 +242,8 @@
     </section>
     <aside class="articolo__sideboard">
         <ol>
-            <li class="">
-                <a href="#titolo-articolo"><?php the_title();?></a>
+            <li id="linkTitolo" class="current-title-index">
+                <a href="#titolo-articolo"><?php the_title(); ?></a>
             </li>
             <?php
             if (have_rows('contenuto_articolo')) :
@@ -254,23 +254,8 @@
                         $h2 = get_sub_field('titolo_h2'); ?>
 
                         <!-- Blocco H2 -->
-                        <li>
-                            <a href="#<?php echo esc_html($h2); ?>" class=""><?php echo esc_html($h2); ?></a>
-                        </li>
-                    <?php
-                    elseif (get_row_layout() == 'titolo_h3') :
-                        $h3 = get_sub_field('titolo_h3'); ?>
-                        <!-- Blocco H3 -->
-                        <li>
-                            <a href="#<?php echo esc_html($h3); ?>" class=""><?php echo esc_html($h3); ?></a>
-                        </li>
-
-                    <?php
-                    elseif (get_row_layout() == 'titolo_h4') :
-                        $h4 = get_sub_field('titolo_h4'); ?>
-                        <!-- Blocco H4 -->
-                        <li>
-                            <a href="#<?php echo  esc_html($h4); ?>" class=""><?php echo esc_html($h4); ?></a>
+                        <li class="toc-anchor">
+                            <a href="#<?php echo esc_html($h2); ?>"><?php echo esc_html($h2); ?></a>
                         </li>
             <?php
                     endif;
@@ -279,7 +264,7 @@
             ?>
         </ol>
         <div class="articolo__sideboard__cta">
-            <h2 class="articolo__sideboard__cta__title"><?php echo esc_html(get_field('titolo_cta_footer', 'option'));?></h2>
+            <h2 class="articolo__sideboard__cta__title"><?php echo esc_html(get_field('titolo_cta_footer', 'option')); ?></h2>
             <?php
             $cta_link = get_field('bottone_cta_footer', 'option');
             if ($cta_link) :

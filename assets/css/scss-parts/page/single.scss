@@ -450,6 +450,7 @@
         padding-top: 40px;
         display: flex;
         flex-direction: row;
+        position: relative;
         font-size: 24px;
         font-weight: 400;
         color: $black;
@@ -477,10 +478,33 @@
           color: $black;
           line-height: 30px;
           letter-spacing: -0.36px;
+          position: relative;
+          transition: all .3s cubic-bezier(.215, .61, .355, 1);
+          overflow-x: clip;
+
+          &::after{
+            content: '';
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            background-color: $green;
+            bottom: -5px;
+            left: -100%;
+          }
         }
 
         &:hover {
           opacity: 0.6;
+        }
+
+        &.current-title-index{
+          a{
+            font-weight: 600;
+
+            &::after{
+              left: 0;
+            }
+          }
         }
       }
     }
